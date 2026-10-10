@@ -13,7 +13,9 @@ header.hero .meta{color:var(--muted);font-size:14px}
 .dateselect label{font-size:14px;color:var(--muted);white-space:nowrap}
 .dateselect select{font-size:15px;padding:8px 14px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);cursor:pointer;max-width:220px}
 h2.section{font-size:22px;margin:44px 0 20px;padding-left:12px;border-left:5px solid var(--accent)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(400px,1fr));gap:20px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media(max-width:1500px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:1100px){.grid{grid-template-columns:repeat(2,1fr)}}
 .relgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(430px,1fr));gap:14px}
 @media(max-width:700px){.grid,.relgrid{grid-template-columns:1fr}.wrap{padding:20px 16px 60px}}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px 24px}
