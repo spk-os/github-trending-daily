@@ -1,0 +1,20 @@
+{
+ "github": {
+  "title": "GitHub 分析报告",
+  "desc": "Star/Fork 仓库动态 + Trending 深度分析，每日更新",
+  "latest": "2026-10-13",
+  "path": "github/"
+ },
+ "orders": {
+  "title": "网站需求接单分析报告",
+  "desc": "网站类外包需求扫描、价格区间与接单切入点，每日更新",
+  "latest": "2026-10-13",
+  "path": "orders/"
+ },
+ "opportunities": {
+  "title": "超级个人机会执行",
+  "desc": "机会池状态 + 每日行动清单，执行导向",
+  "latest": "2026-10-13",
+  "path": "opportunities/"
+ }
+}
