@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>超级个人机会执行 · 2026-10-15</title><style>
+:root{--ink:#1a1a1a;--muted:#666;--line:#e8e8e8;--accent:#0969da;--bg:#fafbfc;--card:#fff;--green:#1a7f37}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.75}
+.wrap{max-width:100%;margin:0 auto;padding:32px 44px 80px}
+header.hero{border-bottom:3px solid var(--ink);padding-bottom:20px;margin-bottom:32px}
+.hero-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+header.hero h1{margin:0 0 8px;font-size:30px}
+header.hero .meta{color:var(--muted);font-size:14px}
+.dateselect{display:flex;align-items:center;gap:10px;padding-top:6px}
+.dateselect label{font-size:14px;color:var(--muted);white-space:nowrap}
+.dateselect input[type="date"]{font-size:14px;padding:7px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);cursor:pointer}
+.sitenav{display:flex;gap:8px;margin-bottom:24px;flex-wrap:wrap}
+.sitenav a{font-size:14px;padding:6px 16px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--muted);background:#fff;white-space:nowrap}
+.sitenav a.active{color:var(--accent);border-color:var(--accent)}
+.sitenav a:hover{color:var(--accent)}
+h2.section{font-size:22px;margin:44px 0 20px;padding-left:12px;border-left:5px solid var(--accent)}
+.compact{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 24px;font-size:14.5px;color:#333;margin-bottom:14px}
+.statrow{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px;margin-bottom:8px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;text-align:center}
+.stat .num{font-size:28px;font-weight:700;color:var(--accent)}
+.stat .lbl{font-size:13px;color:var(--muted)}
+.task{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 22px;margin-bottom:12px;display:flex;gap:14px;align-items:flex-start}
+.task .box{flex:none;width:20px;height:20px;border:2px solid var(--line);border-radius:6px;margin-top:4px}
+.task.done .box{background:var(--green);border-color:var(--green)}
+.task.done .tt{text-decoration:line-through;color:var(--muted)}
+.task .tt{font-size:15px;font-weight:600}
+.task .meta{font-size:13px;color:var(--muted);margin-top:4px}
+.prog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 24px;margin-bottom:12px}
+.prog h3{margin:0 0 8px;font-size:16px}
+.prog .st{font-size:12.5px;border-radius:6px;padding:2px 10px;margin-left:8px;white-space:nowrap}
+.prog .st.doing{background:#ddf4ff;color:#0969da}
+.prog .st.pending{background:#f1f4f9;color:#555}
+.prog p{margin:6px 0;font-size:14px}
+.newitem{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 24px;margin-bottom:12px}
+.newitem h3{margin:0 0 6px;font-size:15.5px}
+.newitem p{margin:4px 0;font-size:14px;color:#333}
+footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+a{color:var(--accent)}
+@media(max-width:700px){.wrap{padding:20px 16px 60px}}
+</style></head><body><div class="wrap">
+<nav class="sitenav"><a href="../">日报中心</a><a href="../github/">GitHub 分析</a><a href="../orders/">接单分析</a><a href="../opportunities/" class="active">机会执行</a></nav>
+<header class="hero"><div class="hero-top"><div>
+<h1>超级个人机会执行</h1>
+<div class="meta">2026-10-15 · 机会池状态 + 每日行动清单</div></div>
+<div class="dateselect"><label for="dp">选择日期</label><input type="date" id="dp" min="2026-10-13" max="2026-10-15" value="2026-10-15"></div>
+</div></header>
+
+<h2 class="section">一、今日行动清单</h2><div class="compact" style="margin-top:0">今日新入库 3 个机会（Agent 安全审计、PentAGI 渗透基座、垂直 Skills 包），机会池共 13 个；今日行动聚焦：安全赛道先跑通工具攒交付物，垂直 Skills 先出一个样品。</div><div class="task"><div class="box"></div><div>
+<div class="tt">本地部署 iFixAi，对自己的一个 n8n agent 工作流跑一遍完整审计，整理出《Agent 安全审计检查清单》初版</div>
+<div class="meta">预计 约2小时 · 来自：Agent安全审计实施咨询</div></div></div><div class="task"><div class="box"></div><div>
+<div class="tt">本地 Docker 跑通 PentAGI，在授权靶场（DVWA）跑一遍完整渗透流程，记录生成的交付物清单</div>
+<div class="meta">预计 约2.5小时 · 来自：渗透测试自动化基座（PentAGI）</div></div></div><div class="task"><div class="box"></div><div>
+<div class="tt">选定一个垂直领域（财税或跨境电商运营），列出 15 个 skill 主题清单，并写出 1 个完整的 SKILL.md 示例</div>
+<div class="meta">预计 约1.5小时 · 来自：垂直领域 Skills 包定制</div></div></div><div class="task"><div class="box"></div><div>
+<div class="tt">跟进昨日未完成的配音 demo：用 VoiceStudio MCP + n8n 跑通 3 分钟视频双语配音端到端流程，记录耗时和效果</div>
+<div class="meta">预计 约2小时 · 来自：视频配音自动化管线</div></div></div><h2 class="section">二、机会池状态</h2><div class="statrow">
+<div class="stat"><div class="num">13</div><div class="lbl">待启动</div></div>
+<div class="stat"><div class="num">0</div><div class="lbl">进行中</div></div>
+<div class="stat"><div class="num">0</div><div class="lbl">已完成</div></div></div><h2 class="section">三、新入库机会</h2><div class="newitem"><h3>Agent安全审计实施咨询</h3><p>iFixAi 日增 2109 星，企业 agent 落地缺可引用的第三方审计结论；你的网关经验正好对上，先做一份检查清单当获客钩子。</p></div><div class="newitem"><h3>渗透测试自动化基座（PentAGI）</h3><p>PentAGI 日增过千星，全自主渗透测试系统成熟；安全团队对持续渗透测试有预算，本地 Docker 就能跑 demo。</p></div><div class="newitem"><h3>垂直领域 Skills 包定制</h3><p>通用 skills 已内卷，scientific-agent-skills 切科研拿到高热度；垂直领域（财税/跨境电商）有真实付费场景。</p></div><h2 class="section">四、本周目标</h2><div class="compact">本周从 13 个机会中选定 2–3 条主攻线，完成至少一个可展示的 demo 或作品集雏形。</div><footer>机会来源：GitHub 趋势日报、每周赚钱机会简报 · 执行状态每日更新</footer>
+</div><script>
+const ARCHIVE_DATES=["2026-10-15","2026-10-14","2026-10-13"];const CURRENT_DATE="2026-10-15";
+document.getElementById("dp").addEventListener("change",function(){var v=this.value;if(ARCHIVE_DATES.indexOf(v)>=0){location.href=v+".html";}else{this.value=CURRENT_DATE;}});
+</script></body></html>
