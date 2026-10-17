@@ -42,7 +42,7 @@ a{color:var(--accent)}
 <header class="hero"><div class="hero-top"><div>
 <h1>GitHub 日报</h1>
 <div class="meta">2026-10-10 · Star/Fork 仓库动态 + Trending 深度报告</div></div>
-<div class="dateselect"><label for="dp">选择日期</label><input type="date" id="dp" min="2026-10-10" max="2026-10-16" value="2026-10-10"></div>
+<div class="dateselect"><label for="dp">选择日期</label><input type="date" id="dp" min="2026-10-10" max="2026-10-17" value="2026-10-10"></div>
 </div></header>
 
 <h2 class="section">一、Star / Fork 仓库动态</h2>
@@ -81,7 +81,7 @@ a{color:var(--accent)}
 <ul><li><b>主要功能：</b>让 Claude Code / Codex 写出地道的 SwiftUI 代码。</li><li><b>关键技术：</b>skill 规则文件；2.0.0 刚加入 iOS 27 和 iPhone Duo 规范，吸收了 Apple 官方 skills 的建议。</li>
 <li><b>主要更新：</b>10-09 发 2.0.0，紧跟苹果新系统。</li><li><b>上榜原因：</b>苹果生态 + 新机发布周期，垂直 skill 的典型代表。</li><li><b>后续趋势：</b>平台厂商开始自己写 skills，第三方 skill 拼的是更新速度和深度。</li></ul></div></div><h2 class="section">三、近一周趋势分析</h2><div class="trend"><h3>1. Agent Skills 从“写代码插件”变成全行业 agent 能力封装标准</h3><p>本周 skill 相关上榜 7 个以上，覆盖代码、图表设计、iOS、CAD、知识工作、Cursor 插件规范。mattpocock/skills 日周双榜、28 万 star，已是水电煤。</p></div><div class="trend"><h3>2. Agent 能力边界向外扩</h3><p>逆向（rea）、上网（Agent-Reach 周 +7084）、视频渲染（hyperframes 周 +4003，HTML 写代码渲染视频、为 agent 而生）、CAD（text-to-cad）、持久记忆（claude-mem 周 +3850）、agent 组网（openrig）。“给 agent 装手和眼睛”是本周最热的叙事。</p></div><div class="trend"><h3>3. 大厂下场做开源 agent 工具链</h3><p>阿里（open-code-review）、Anthropic（官方插件库）、Epic（raddebugger 原生调试器）都在发力，说明这已不是极客玩具，而是基础设施卡位战。</p></div><div class="trend"><h3>4. 两个反常识信号</h3><p>一是 AnyPS5（周 +15539）、openGym（健身追踪，周 +6749）这种硬核/出圈题材依然能爆，社区传播红利还在；二是 litellm（2023）、artcraft（2022）靠持续迭代重回榜单——“长期维护”本身就是护城河。</p></div><h2 class="section">四、热点总结</h2><div class="hot">本周 GitHub 只有一个真正的主题：Agent Skills 生态大爆发。从 28 万 star 的通用 skill 仓库，到图表、iOS、CAD、知识工作等垂直 skill，再到 Anthropic 官方下场定标准，skill 正在成为 agent 时代的“应用商店”。与此同时 agent 的能力边界在快速外扩——逆向、上网、视频、CAD、持久记忆，昨天还只是 demo 的东西正在被封装成可复用的 skill。对你来说最直接的信号是：网关（litellm 回春）+ 代码评审（阿里入场）+ skill 中文生态空白，三件事都指向“帮别人把 agent 落地”这个生意。</div><h2 class="section">五、机会分析</h2><div class="opp"><ol><li><b>中文 Agent Skills 生态卡位</b><br>7 个 skill 仓库霸榜，但中文内容几乎空白。用你最熟的“Docker 部署 AI 网关 / n8n 工作流”写 2-3 个高质量中文 skill 开源，顺带做中文解读内容获客。<br><i>第一步：把你给客户搭网关的那套流程写成 SKILL.md 发出来。</i></li><li><b>open-code-review 二次落地接单</b><br>阿里背书、Go 编写、兼容 OpenAI/Anthropic，5 个月迭代到 1.12.x 说明在认真做。包装成“AI 代码评审网关”给中小团队做私有化部署。<br><i>第一步：本地 Docker 跑通，对接一个国产模型实测误报率。</i></li><li><b>litellm 私有网关代运维</b><br>老牌网关重回榜单，多模型统一网关需求在涨，正好打你的网关 + Docker 强项。<br><i>第一步：用 litellm 给自己搭一个统一网关跑一周，沉淀出部署手册和定价。</i></li></ol></div><footer>数据来源：GitHub Trending（daily / weekly）与 GitHub REST API · 趋势判断为分析师观点，仅供参考</footer>
 </div><script>
-const ARCHIVE_DATES=["2026-10-16","2026-10-15","2026-10-14","2026-10-13","2026-10-12","2026-10-11","2026-10-10"];const CURRENT_DATE="2026-10-10";
+const ARCHIVE_DATES=["2026-10-17","2026-10-16","2026-10-15","2026-10-14","2026-10-13","2026-10-12","2026-10-11","2026-10-10"];const CURRENT_DATE="2026-10-10";
 document.getElementById("dp").addEventListener("change",function(){var v=this.value;if(ARCHIVE_DATES.indexOf(v)>=0){location.href=v+".html";}else{this.value=CURRENT_DATE;}});
 </script>
 </body></html>
