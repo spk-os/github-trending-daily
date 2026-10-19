@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>网站需求接单分析 · 2026-10-19</title><style>
+:root{--ink:#1a1a1a;--muted:#666;--line:#e8e8e8;--accent:#0969da;--bg:#fafbfc;--card:#fff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.75}
+.wrap{max-width:100%;margin:0 auto;padding:32px 44px 80px}
+header.hero{border-bottom:3px solid var(--ink);padding-bottom:20px;margin-bottom:32px}
+.hero-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+header.hero h1{margin:0 0 8px;font-size:30px}
+header.hero .meta{color:var(--muted);font-size:14px}
+.dateselect{display:flex;align-items:center;gap:10px;padding-top:6px}
+.dateselect label{font-size:14px;color:var(--muted);white-space:nowrap}
+.dateselect input[type="date"]{font-size:14px;padding:7px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);cursor:pointer}
+.sitenav{display:flex;gap:8px;margin-bottom:24px;flex-wrap:wrap}
+.sitenav a{font-size:14px;padding:6px 16px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--muted);background:#fff;white-space:nowrap}
+.sitenav a.active{color:var(--accent);border-color:var(--accent)}
+.sitenav a:hover{color:var(--accent)}
+h2.section{font-size:22px;margin:44px 0 20px;padding-left:12px;border-left:5px solid var(--accent)}
+.dtable{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:12px;font-size:14.5px;overflow:hidden}
+.dtable th,.dtable td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.dtable thead th{background:#f6f8fa;font-size:13px;color:var(--muted)}
+.dtable tbody tr:last-child td{border-bottom:none}
+.compact{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 24px;font-size:14.5px;color:#333;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 24px}
+.card h3{margin:0 0 8px;font-size:16.5px}
+.card h3 a{color:var(--accent);text-decoration:none}
+.card .row{font-size:14px;margin:6px 0;color:#333}
+.card .row b{color:#111}
+.card .tag{font-size:12px;background:#f1f4f9;border:1px solid var(--line);border-radius:6px;padding:1px 8px;margin-right:6px;color:#555;white-space:nowrap}
+.entry{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 26px;margin-bottom:14px}
+.entry h3{margin:0 0 8px;font-size:16.5px}
+.entry p{margin:6px 0;font-size:14.5px}
+footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+a{color:var(--accent)}
+@media(max-width:700px){.wrap{padding:20px 16px 60px}}
+</style></head><body><div class="wrap">
+<nav class="sitenav"><a href="../">日报中心</a><a href="../github/">GitHub 分析</a><a href="../orders/" class="active">接单分析</a><a href="../opportunities/">机会执行</a></nav>
+<header class="hero"><div class="hero-top"><div>
+<h1>网站需求接单分析报告</h1>
+<div class="meta">2026-10-19 · 网站类外包需求扫描、价格区间与接单切入点</div></div>
+<div class="dateselect"><label for="dp">选择日期</label><input type="date" id="dp" min="2026-10-13" max="2026-10-19" value="2026-10-19"></div>
+</div></header>
+
+<h2 class="section">一、今日需求速览</h2>
+<div class="compact">今日需求量保持稳定，主流预算区间 1-15 万元；外贸独立站定制价格共识继续收敛到 3-5 万元技术定制档（原生代码+海外服务器+CDN+SEO埋点）；新增价格锚点：2026 全品类建站预算清单与小程序 AI 智能体接入报价（3-30 万元）；n8n 代搭建报价带稳定在 $100-750 美元/单。</div><h2 class="section">二、需求分类与价格</h2>
+<table class="dtable"><thead><tr><th>类别</th><th>需求量</th><th>预算区间</th><th>主流技术栈</th><th>备注</th></tr></thead>
+<tbody><tr><td><b>品牌官网/企业展示站</b></td><td>需求量大，主力需求</td><td>0.5-20 万元（半定制 5000-20000 元，营销型 2-8 万元，高端定制 5-20 万元）</td><td>WordPress/PHP、Vue+Laravel、Next.js</td><td>2026 预算清单确认半定制为中小企业主流档；定制必须交付完整源码，否则等于租站。</td></tr><tr><td><b>外贸独立站/B2B 询盘站</b></td><td>需求量大，持续升温</td><td>8000-80000 元；技术定制档 3-5 万元为共识</td><td>WordPress+WooCommerce、Shopify、原生 HTML5/CSS5 定制</td><td>杭州市场 8000-80000 报价差全在「卖模板还是卖资产」；低于市场均价的单最后会在售后和续费上找回来。</td></tr><tr><td><b>电商/功能型网站</b></td><td>中量，单价高</td><td>3 万元-50 万元以上</td><td>WooCommerce、PHP 定制、Next.js 全栈</td><td>支付物流、会员分级、ERP 对接是拉高客单价的增值项；复杂平台型可到 15-50 万元。</td></tr><tr><td><b>流程自动化/n8n 代搭建</b></td><td>快速增长</td><td>$100-750 美元/单，或 $20-25 美元/小时</td><td>n8n、Make.com、Python 胶水层、Docker 私有化部署</td><td>Upwork 服务页三档定价 $100/$250/$500 成熟；自托管 $5/月 VPS 对比云版订阅是打动客户的卖点。</td></tr><tr><td><b>AI 智能体接入（小程序/网站）</b></td><td>新兴，预算带清晰</td><td>3-30 万元（问答型 3-8 万，RAG 知识库 8-20 万，任务执行型 15-30 万）</td><td>Dify/Coze、私有化 LLM 网关、RAG、向量库</td><td>大模型 API 只是持续支出小头，Prompt 调优+RAG+系统对接才是开发费主体；报价须把接入开发费与模型调用费拆开。</td></tr><tr><td><b>网站改版/二次开发/运维</b></td><td>中量，复购率高</td><td>0.3-2 万元/次；年维护费为项目费的 10-20%</td><td>按原站技术栈（WordPress/PHP/Node 常见）</td><td>2026 清单确认维护费锚点为 10-20%；模板站跑路案例多，改版+迁移是持续入口。</td></tr></tbody></table><h2 class="section">三、值得跟进的需求</h2><div class="grid"><div class="card"><h3><a href="https://www.tuokekeji.com/news_17/996.html">外贸独立站技术定制开发（原生代码+SEO埋点）</a></h3>
+<div class="row"><span class="tag">3-5 万元</span><span class="tag">拓客科技 2026 杭州外贸建站费用揭秘（10 月中旬更新，4 天前）</span></div>
+<div class="row"><b>技术要求：</b>原生 HTML5/CSS5、WordPress/WooCommerce、海外服务器+CDN</div>
+<div class="row"><b>匹配度：</b>杭州市场报价高度分化，3-5 万技术定制档靠「独立源码+海外服务器+SEO埋点」差异化突围；「先建站、再投SEM」的顺序建议可作为个人接单的话术。</div></div><div class="card"><h3><a href="https://www.upwork.com/services/product/development-it-n8n-workflow-automation-to-connect-your-apps-and-save-hours-2058909802936395265">n8n 工作流自动化代搭建（三档服务）</a></h3>
+<div class="row"><span class="tag">$100/$250/$500 三档（按工作流数量与复杂度）</span><span class="tag">Upwork n8n 服务产品页（1 天前抓取，实时在售）</span></div>
+<div class="row"><b>技术要求：</b>n8n、多应用连接、条件分支、错误处理、部署文档</div>
+<div class="row"><b>匹配度：</b>三档定价是可直接抄的标准化产品模板；「自托管、无月费、无限执行」正好是用户 Docker+n8n 能力的卖点。</div></div><div class="card"><h3><a href="https://web.softunis.com/3616.html">小程序接入 AI 智能体（问答/RAG/任务执行）</a></h3>
+<div class="row"><span class="tag">3-8 万（问答型）/8-20 万（RAG+权限）/15-30 万（任务执行型）</span><span class="tag">软盟技术开发网 2026 小程序 AI 智能体费用拆解（25 天前）</span></div>
+<div class="row"><b>技术要求：</b>大模型 API、Prompt 调优、RAG 知识库、业务系统集成</div>
+<div class="row"><b>匹配度：</b>与用户 Dify+网关能力直接对齐的新赛道；开发费主体是 Prompt+RAG+集成而非 API，报价时拆出模型调用费可避免后期超支纠纷。</div></div><div class="card"><h3><a href="https://community.n8n.io/t/for-hire-n8n-ai-automation-builder-self-hosted-workflows-whatsapp-api-integrations/317167">n8n+AI 自动化 Builder 接单（按小时/固定价）</a></h3>
+<div class="row"><span class="tag">$20-25 美元/小时，或固定价</span><span class="tag">n8n 官方社区 For Hire 帖（2026-09-28 发布）</span></div>
+<div class="row"><b>技术要求：</b>n8n、WhatsApp/API 集成、AI agent、自托管</div>
+<div class="row"><b>匹配度：</b>真实同行的接单帖：从小单/修单起步建立信任；用户可用 OmniRoute 多模型网关经验做差异化（成本优化+多模型路由）。</div></div><div class="card"><h3><a href="https://www.runrang.net/jzzk/538.html">2026 建站全品类预算清单（价格锚点总表）</a></h3>
+<div class="row"><span class="tag">SaaS模板 500-3000元/年；半定制 5000-20000；营销型 2-8万；外贸站 8000-35000；高端定制 5-20万；平台型 15-50万+</span><span class="tag">润壤网络 2026 建站费用明细（2026-09-21 发布）</span></div>
+<div class="row"><b>技术要求：</b>全品类报价参考</div>
+<div class="row"><b>匹配度：</b>报价谈判的底气来源：拿着全品类清单给客户做预算规划，顺带推「源码交付+合同写清+预留维护预算」三条避坑线，建立专业信任。</div></div></div><h2 class="section">四、价格参考</h2>
+<table class="dtable"><thead><tr><th>类型</th><th>低端</th><th>中端</th><th>高端</th></tr></thead>
+<tbody><tr><td><b>模板站</b></td><td>500-3000 元/年（SaaS 模板）</td><td>3000-8000 元（模板+代搭建）</td><td>1-1.5 万元（定制设计+基础 SEO）</td></tr><tr><td><b>品牌官网</b></td><td>5000-20000 元（半定制）</td><td>2-8 万元（营销型/设计公司定制主流档）</td><td>5-20 万元（高端品牌定制）</td></tr><tr><td><b>外贸独立站</b></td><td>8000-15000 元（半定制 WordPress）</td><td>3-5 万元（原生代码+海外服务器+CDN+SEO 埋点）</td><td>8 万元以上（ERP/CRM 对接、多语言大型站）</td></tr><tr><td><b>电商网站</b></td><td>3 万元（基础 WooCommerce/模板电商）</td><td>8-15 万元（支付物流会员全套）</td><td>15-50 万元以上（平台型/复杂系统）</td></tr><tr><td><b>AI 智能体接入</b></td><td>3-8 万元（小程序/网站简单问答型）</td><td>8-20 万元（RAG 知识库+权限+后台）</td><td>20-50 万元以上（多系统集成/多智能体协作）</td></tr><tr><td><b>年维护费</b></td><td>2-5 千元/年（基础托管+备份）</td><td>0.5-2 万元/年（约为项目费的 10-20%）</td><td>2 万元以上/年（大型站运维+SEO 跟踪）</td></tr></tbody></table><h2 class="section">五、接单切入点</h2><div class="entry"><h3>n8n 自动化代搭建：抄 Upwork 三档模板快速上架</h3><p>n8n 代搭建报价带已稳定在 $100-750 美元/单，Upwork 上已有成熟的三档产品页（$100 单工作流/$250 多步骤/$500 全套+文档）。用户 Docker 自托管能力正好对应「无月费、无限执行」的核心卖点。</p><p><b>第一步：</b>照抄三档结构在 Upwork/猪八戒各上架一个 n8n 服务页，整理 3 个自用工作流做作品集；同时发布一篇「$5 VPS 自托管 n8n 对比 Zapier 省 $720/年」的中文实测文章引流。</p></div><div class="entry"><h3>外贸独立站打包服务：用「先建站、再投SEM」打价格战</h3><p>杭州市场 8000-80000 报价混乱，客户最大痛点是怕被坑。打法是打包交付「独立源码+海外服务器+CDN+SEO 埋点」，并用「先建站、再投 SEM」的顺序建议帮客户做预算规划，把自己从报价竞争者变成预算顾问。</p><p><b>第一步：</b>做一个可复用的外贸站脚手架（WordPress/WooCommerce + 多语言 + 询盘表单 + SEO 模板），配上 2026 预算清单做成一页报价说明书，先给 1-2 家熟人企业半价试用换案例。</p></div><div class="entry"><h3>AI 智能体接入：小程序服务商的转包上游</h3><p>小程序接入 AI 智能体预算带 3-30 万元且需求刚起量，但多数建站/小程序公司缺 AI 落地能力。用户 Dify+网关+RAG 能力可做他们的转包上游：他们拿客户，你做 AI 模块，Prompt 调优与模型调用费拆开报价。</p><p><b>第一步：</b>用 Dify 做一个带企业知识库的客服 demo（含引用来源+权限控制），联系 2-3 家本地小程序开发公司谈转包合作，按项目 3-8 万档先跑通一个。</p></div><div class="compact" style="margin-top:20px;color:var(--muted);font-size:13.5px">数据源与实测结论：10-19 上午再次实测——程序员客栈 /cat/ 仍为「兼职程序员」人才目录（无需求列表，站内搜索需登录）；猪八戒 task.zbj.com 今日返回 200（昨日 404）但仍为 Nuxt JS 空壳无需求条目，/xuqiu/ 仅为热词索引。故本期为搜索抽样（5 组查询、约 20 个结果）+ 既有价格锚点模式；分类与预算基于网页搜索抽样（2026 建站预算清单、外贸建站费用揭秘、小程序 AI 智能体费用拆解、n8n 服务产品页与接单帖）与 2026 既有价格锚点综合；featured 为代表性需求类型（均有真实来源链接），非逐帖跟踪。</div><footer>数据来源：程序员客栈 / 猪八戒等平台公开需求、市场公开报价 · 仅供接单参考，不构成承诺</footer>
+</div><script>
+const ARCHIVE_DATES=["2026-10-19","2026-10-18","2026-10-17","2026-10-16","2026-10-15","2026-10-14","2026-10-13"];const CURRENT_DATE="2026-10-19";
+document.getElementById("dp").addEventListener("change",function(){var v=this.value;if(ARCHIVE_DATES.indexOf(v)>=0){location.href=v+".html";}else{this.value=CURRENT_DATE;}});
+</script></body></html>
