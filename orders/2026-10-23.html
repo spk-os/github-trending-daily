@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>网站需求接单分析 · 2026-10-23</title><style>
+:root{--ink:#1a1a1a;--muted:#666;--line:#e8e8e8;--accent:#0969da;--bg:#fafbfc;--card:#fff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.75}
+.wrap{max-width:100%;margin:0 auto;padding:32px 44px 80px}
+header.hero{border-bottom:3px solid var(--ink);padding-bottom:20px;margin-bottom:32px}
+.hero-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+header.hero h1{margin:0 0 8px;font-size:30px}
+header.hero .meta{color:var(--muted);font-size:14px}
+.dateselect{display:flex;align-items:center;gap:10px;padding-top:6px}
+.dateselect label{font-size:14px;color:var(--muted);white-space:nowrap}
+.dateselect input[type="date"]{font-size:14px;padding:7px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);cursor:pointer}
+.sitenav{display:flex;gap:8px;margin-bottom:24px;flex-wrap:wrap}
+.sitenav a{font-size:14px;padding:6px 16px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--muted);background:#fff;white-space:nowrap}
+.sitenav a.active{color:var(--accent);border-color:var(--accent)}
+.sitenav a:hover{color:var(--accent)}
+h2.section{font-size:22px;margin:44px 0 20px;padding-left:12px;border-left:5px solid var(--accent)}
+.dtable{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:12px;font-size:14.5px;overflow:hidden}
+.dtable th,.dtable td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.dtable thead th{background:#f6f8fa;font-size:13px;color:var(--muted)}
+.dtable tbody tr:last-child td{border-bottom:none}
+.compact{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 24px;font-size:14.5px;color:#333;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 24px}
+.card h3{margin:0 0 8px;font-size:16.5px}
+.card h3 a{color:var(--accent);text-decoration:none}
+.card .row{font-size:14px;margin:6px 0;color:#333}
+.card .row b{color:#111}
+.card .tag{font-size:12px;background:#f1f4f9;border:1px solid var(--line);border-radius:6px;padding:1px 8px;margin-right:6px;color:#555;white-space:nowrap}
+.entry{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 26px;margin-bottom:14px}
+.entry h3{margin:0 0 8px;font-size:16.5px}
+.entry p{margin:6px 0;font-size:14.5px}
+footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+a{color:var(--accent)}
+@media(max-width:700px){.wrap{padding:20px 16px 60px}}
+</style></head><body><div class="wrap">
+<nav class="sitenav"><a href="../">日报中心</a><a href="../github/">GitHub 分析</a><a href="../orders/" class="active">接单分析</a><a href="../opportunities/">机会执行</a></nav>
+<header class="hero"><div class="hero-top"><div>
+<h1>网站需求接单分析报告</h1>
+<div class="meta">2026-10-23 · 网站类外包需求扫描、价格区间与接单切入点</div></div>
+<div class="dateselect"><label for="dp">选择日期</label><input type="date" id="dp" min="2026-10-13" max="2026-10-23" value="2026-10-23"></div>
+</div></header>
+
+<h2 class="section">一、今日需求速览</h2>
+<div class="compact">今日两平台需求列表均被反爬拦截（猪八戒滑块验证码+限速、程序员客栈需登录），未抓到新的需求条目、未编造；本期以10月内更新的深圳/广州/合肥/佛山四地服务商公开报价为锚点出一期：企业官网半定制1.5-5万仍是基本盘，外贸多语言站标准档1.5-4万、GEO（AI搜索优化）成2026新卖点，小程序半定制2-6万、全定制8万起，源码交付成为客户核心诉求。</div><h2 class="section">二、需求分类与价格</h2>
+<table class="dtable"><thead><tr><th>类别</th><th>需求量</th><th>预算区间</th><th>主流技术栈</th><th>备注</th></tr></thead>
+<tbody><tr><td><b>企业官网整站定制</b></td><td>需求基本盘（沿用10-21期实采约32条口径）</td><td>展示型0.3-1万 / 半定制1.5-5万 / 高端10-20万</td><td>响应式整站、PC+移动端、WordPress/自研CMS、SEO埋点</td><td>中小制造企业为主，对技术没执念、要省心；源码交付是2026年客户核心诉求。</td></tr><tr><td><b>外贸独立站/多语言站</b></td><td>持续活跃（沿用10-21期实采约24条口径）</td><td>入门0.3-0.8万 / 标准1.5-4万 / 专业5-15万</td><td>WordPress+多语言、多币种、海外服务器+CDN、SEO/GEO</td><td>佛山/东莞/深圳制造业外贸转型刚需；GEO（AI搜索优化）是2026年新增卖点。</td></tr><tr><td><b>微信小程序定制</b></td><td>垂直场景持续有新需求（沿用10-21期实采约20条口径）</td><td>SaaS年费数千 / 半定制2-6万 / 全定制8-30万+</td><td>微信小程序原生/uni-app、云开发、ERP/CRM对接</td><td>餐饮预订、场馆竞价、寄存保管等功能闭环场景，一个样板可复用；年度维护约开发费15-20%。</td></tr><tr><td><b>电商/功能型网站</b></td><td>客单价最高（沿用10-21期实采约10条口径）</td><td>2-8万 / 8-20万 / 20-50万+</td><td>商城系统、支付/会员、多角色权限、系统对接</td><td>会员/支付/多角色权限等偏行业功能型，需求明确、预算充足，适合工程能力强的团队。</td></tr><tr><td><b>低预算模板站/二次开发</b></td><td>多为老需求（沿用10-21期实采约15条口径）</td><td>800-2000元 / 3000-8000元</td><td>CMS模板改、二次开发、SaaS自助建站</td><td>单价极低、源码常不交付，后期纠纷多，不建议投入时间。</td></tr></tbody></table><h2 class="section">三、值得跟进的需求</h2><div class="grid"><div class="card"><h3><a href="https://www.tuokekeji.com/news_17/907.html">2026外贸独立站：英文多语言商城定制开发</a></h3>
+<div class="row"><span class="tag">标准档1.5-4万 / 专业档5万+</span><span class="tag">行业资讯·搜索抽样</span></div>
+<div class="row"><b>技术要求：</b>WordPress+多语言本地化、海外服务器+CDN、SEO/GEO优化</div>
+<div class="row"><b>匹配度：</b>佛山/东莞/深圳制造业外贸转型刚需；多语言本地化+SEO/GEO的门槛挡掉低价竞争者，利润空间好，且GEO是2026年新增卖点。</div></div><div class="card"><h3><a href="https://www.whkakaxi.com/news/18887.html">蛋糕烘焙店小程序开发预算拆解（现货预订/门店自取/配送）</a></h3>
+<div class="row"><span class="tag">半定制2-6万</span><span class="tag">行业资讯·搜索抽样</span></div>
+<div class="row"><b>技术要求：</b>微信小程序、订单/预订/配送履约闭环、门店后台</div>
+<div class="row"><b>匹配度：</b>需求功能闭环（现货/预订/自取/配送四种履约规则）、验收标准明确，一个样板可复用到同类门店；10-21刚更新的预算拆解可直接当报价参考。</div></div><div class="card"><h3><a href="https://www.ruizim.net/column/expert/124.html">深圳企业微信小程序开发真实账本（获客到复购）</a></h3>
+<div class="row"><span class="tag">半定制2-6万 / 全定制8万起</span><span class="tag">行业资讯·搜索抽样</span></div>
+<div class="row"><b>技术要求：</b>微信小程序、企业微信/CRM承接、微信搜一搜SEO</div>
+<div class="row"><b>匹配度：</b>深圳南山本地公司10天前发布的获客链路打法（官网+小程序+企业微信同一套链路），可直接借鉴做投标方案附件；深圳本地客户沟通成本低。</div></div><div class="card"><h3><a href="https://www.szweb.cn/knowledge/29618.html">深圳网站制作2026报价区间与成本对比</a></h3>
+<div class="row"><span class="tag">展示型0.3-1万 / 半定制1.5-5万</span><span class="tag">行业资讯·搜索抽样</span></div>
+<div class="row"><b>技术要求：</b>响应式整站、源码交付、SEO基建</div>
+<div class="row"><b>匹配度：</b>深圳本地报价口径（10-9更新），源码交付+三年总拥有成本是客户决策点；官网整站是需求基本盘，标准化交付流程可复制，适合做稳定现金流单。</div></div></div><h2 class="section">四、价格参考</h2>
+<table class="dtable"><thead><tr><th>类型</th><th>低端</th><th>中端</th><th>高端</th></tr></thead>
+<tbody><tr><td><b>品牌官网</b></td><td>0.3-1万元</td><td>1.5-5万元</td><td>8-20万元+</td></tr><tr><td><b>外贸独立站</b></td><td>0.3-0.8万元</td><td>1.5-4万元</td><td>5-15万元+</td></tr><tr><td><b>电商/功能型网站</b></td><td>2-8万元</td><td>8-20万元</td><td>20-50万元+</td></tr><tr><td><b>微信小程序定制</b></td><td>SaaS年费数千元</td><td>2-6万元</td><td>8-30万元+</td></tr><tr><td><b>模板站/二次开发</b></td><td>800-2000元</td><td>3000-8000元</td><td>—</td></tr><tr><td><b>年维护费</b></td><td>1000-3000元/年</td><td>3000-10000元/年</td><td>开发费10-20%</td></tr></tbody></table><h2 class="section">五、接单切入点</h2><div class="entry"><h3>中小企业官网「半定制+源码交付」标准化交付</h3><p>需求量最大、最稳定的一类。2026年客户核心诉求从“便宜”转向“源码交付+能自主更新”，标准化报价单可直接复用。</p><p><b>第一步：</b>按合肥8000元档实例（原创首页+6产品分类页+12内页+询盘表单+后台+SEO基础+源码交付）做一份标准化报价单和演示站，先跑通第一单交付流程。</p></div><div class="entry"><h3>外贸多语言独立站（中英/多语种+SEO/GEO）</h3><p>深圳周边制造业外贸转型的刚需，多语言本地化与SEO/GEO门槛天然过滤低价竞争者，客单价好且复购（内容运营）空间大。</p><p><b>第一步：</b>用WordPress搭一个英文演示站（含询盘表单、SEO埋点、GEO优化说明），作为投标附件；把“交付完整源码”写进方案首页。</p></div><div class="entry"><h3>垂直场景小程序样板（餐饮/场馆/寄管）</h3><p>烘焙预订、场馆竞价、寄存保管等需求功能闭环、验收标准明确，武汉卡卡西10-21刚发布过完整预算拆解，可直接当报价参考。</p><p><b>第一步：</b>照那份预算拆解做一份烘焙店小程序报价清单（含现货/预订/自取/配送四种履约规则），先跑通一个样板再复制。</p></div><div class="compact" style="margin-top:20px;color:var(--muted);font-size:13.5px">数据源与实测结论：猪八戒需求搜索页（/xq/、task.zbj.com）今日实测被滑块验证码与限速拦截，程序员客栈 /cat/、/tasks 实测为人才目录与任务推广页（任务搜索需登录），两平台均未抓到有效需求列表；本期未编造任何需求条目，需求侧结论沿用10-21期实采口径，价格锚点全部来自2026年10月内更新的深圳/广州/合肥/佛山等地服务商公开报价（沙漠风、广州万户、久鑫网络、睿智网络、拓客科技等），featured链接均为可验证的真实资讯页。2026-10-22期日报因故未发布，归档序列中缺失该日期。</div><footer>数据来源：程序员客栈 / 猪八戒等平台公开需求、市场公开报价 · 仅供接单参考，不构成承诺</footer>
+</div><script>
+const ARCHIVE_DATES=["2026-10-23","2026-10-21","2026-10-20","2026-10-19","2026-10-18","2026-10-17","2026-10-16","2026-10-15","2026-10-14","2026-10-13"];const CURRENT_DATE="2026-10-23";
+document.getElementById("dp").addEventListener("change",function(){var v=this.value;if(ARCHIVE_DATES.indexOf(v)>=0){location.href=v+".html";}else{this.value=CURRENT_DATE;}});
+</script></body></html>
