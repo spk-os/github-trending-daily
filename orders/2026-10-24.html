@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>网站需求接单分析 · 2026-10-24</title><style>
+:root{--ink:#1a1a1a;--muted:#666;--line:#e8e8e8;--accent:#0969da;--bg:#fafbfc;--card:#fff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.75}
+.wrap{max-width:100%;margin:0 auto;padding:32px 44px 80px}
+header.hero{border-bottom:3px solid var(--ink);padding-bottom:20px;margin-bottom:32px}
+.hero-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+header.hero h1{margin:0 0 8px;font-size:30px}
+header.hero .meta{color:var(--muted);font-size:14px}
+.dateselect{display:flex;align-items:center;gap:10px;padding-top:6px}
+.dateselect label{font-size:14px;color:var(--muted);white-space:nowrap}
+.dateselect input[type="date"]{font-size:14px;padding:7px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);cursor:pointer}
+.sitenav{display:flex;gap:8px;margin-bottom:24px;flex-wrap:wrap}
+.sitenav a{font-size:14px;padding:6px 16px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--muted);background:#fff;white-space:nowrap}
+.sitenav a.active{color:var(--accent);border-color:var(--accent)}
+.sitenav a:hover{color:var(--accent)}
+h2.section{font-size:22px;margin:44px 0 20px;padding-left:12px;border-left:5px solid var(--accent)}
+.dtable{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:12px;font-size:14.5px;overflow:hidden}
+.dtable th,.dtable td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.dtable thead th{background:#f6f8fa;font-size:13px;color:var(--muted)}
+.dtable tbody tr:last-child td{border-bottom:none}
+.compact{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 24px;font-size:14.5px;color:#333;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 24px}
+.card h3{margin:0 0 8px;font-size:16.5px}
+.card h3 a{color:var(--accent);text-decoration:none}
+.card .row{font-size:14px;margin:6px 0;color:#333}
+.card .row b{color:#111}
+.card .tag{font-size:12px;background:#f1f4f9;border:1px solid var(--line);border-radius:6px;padding:1px 8px;margin-right:6px;color:#555;white-space:nowrap}
+.entry{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 26px;margin-bottom:14px}
+.entry h3{margin:0 0 8px;font-size:16.5px}
+.entry p{margin:6px 0;font-size:14.5px}
+footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+a{color:var(--accent)}
+@media(max-width:700px){.wrap{padding:20px 16px 60px}}
+</style></head><body><div class="wrap">
+<nav class="sitenav"><a href="../">日报中心</a><a href="../github/">GitHub 分析</a><a href="../orders/" class="active">接单分析</a><a href="../opportunities/">机会执行</a></nav>
+<header class="hero"><div class="hero-top"><div>
+<h1>网站需求接单分析报告</h1>
+<div class="meta">2026-10-24 · 网站类外包需求扫描、价格区间与接单切入点</div></div>
+<div class="dateselect"><label for="dp">选择日期</label><input type="date" id="dp" min="2026-10-13" max="2026-10-24" value="2026-10-24"></div>
+</div></header>
+
+<h2 class="section">一、今日需求速览</h2>
+<div class="compact">今日两平台需求列表仍不可达（程序员客栈浏览器实测需登录查看，猪八戒列表JS渲染+搜索被拦截），未抓到新增需求条目、未编造；本期新增价格锚点：n8n自动化代搭建（Upwork真实三档报价，单流程约¥500-1800、AI Agent流程约¥5700-18000+）与2026建站三档真实报价（模板¥600-2000/半定制¥980-5000/全定制¥20000起）；基本盘仍是企业官网半定制1.5-5万，n8n代搭建是匹配用户技能的新增高适配赛道。</div><h2 class="section">二、需求分类与价格</h2>
+<table class="dtable"><thead><tr><th>类别</th><th>需求量</th><th>预算区间</th><th>主流技术栈</th><th>备注</th></tr></thead>
+<tbody><tr><td><b>企业官网整站定制</b></td><td>需求基本盘（沿用10-21期实采约32条口径）</td><td>展示型0.3-1万 / 半定制1.5-5万 / 高端10-20万</td><td>响应式整站、PC+移动端、WordPress/自研CMS、SEO埋点</td><td>中小制造企业为主，对技术没执念、要省心；源码交付是2026年客户核心诉求。</td></tr><tr><td><b>外贸独立站/多语言站</b></td><td>持续活跃（沿用10-21期实采约24条口径）</td><td>入门0.3-0.8万 / 标准1.5-4万 / 专业5-15万</td><td>WordPress+多语言、多币种、海外服务器+CDN、SEO/GEO</td><td>佛山/东莞/深圳制造业外贸转型刚需；GEO（AI搜索优化）是2026年新增卖点。</td></tr><tr><td><b>微信小程序定制</b></td><td>垂直场景持续有新需求（沿用10-21期实采约20条口径）</td><td>SaaS年费数千 / 半定制2-6万 / 全定制8-30万+</td><td>微信小程序原生/uni-app、云开发、ERP/CRM对接</td><td>餐饮预订、场馆竞价、寄存保管等功能闭环场景，一个样板可复用；年度维护约开发费15-20%。</td></tr><tr><td><b>电商/功能型网站</b></td><td>客单价最高（沿用10-21期实采约10条口径）</td><td>2-8万 / 8-20万 / 20-50万+</td><td>商城系统、支付/会员、多角色权限、系统对接</td><td>会员/支付/多角色权限等偏行业功能型，需求明确、预算充足，适合工程能力强的团队。</td></tr><tr><td><b>n8n/工作流自动化代搭建</b></td><td>新增赛道（本期抽样新增，约8条海外报价口径）</td><td>单流程$75-249（约¥500-1800） / 多系统联动$300-499 / AI Agent流程$800-2500+</td><td>n8n自托管、AI Agent节点、MCP、Docker部署</td><td>Zapier按任务数涨价逼走客户，n8n按执行数计费是卖点；客户提供n8n实例、按三档报价，国内中小团队是蓝海。</td></tr><tr><td><b>低预算模板站/二次开发</b></td><td>多为老需求（沿用10-21期实采约15条口径）</td><td>800-2000元 / 3000-8000元</td><td>CMS模板改、二次开发、SaaS自助建站</td><td>单价极低、源码常不交付，后期纠纷多，不建议投入时间。</td></tr></tbody></table><h2 class="section">三、值得跟进的需求</h2><div class="grid"><div class="card"><h3><a href="https://www.upwork.com/services/product/development-it-a-custom-n8n-workflow-automation-for-your-business-2047329042199031340">Upwork n8n自动化代搭建真实价格档（$149-$999三档）</a></h3>
+<div class="row"><span class="tag">单流程$75-$249（约¥500-1800） / AI Agent流程$800-$2500（约¥5700-18000）</span><span class="tag">行业资讯·搜索抽样</span></div>
+<div class="row"><b>技术要求：</b>n8n自托管、AI Agent节点、MCP、Webhook/API联调</div>
+<div class="row"><b>匹配度：</b>Upwork真实挂单的定价分层：Starter做简单通知/线索同步、Advanced带AI模型集成+错误重试，国内客户还没有这套价格认知，第一个入场吃信息差。</div></div><div class="card"><h3><a href="https://www.wangzhandingzhi.com/blog-zuogewangzhan-duoshaoqian.html">做个网站多少钱？2026年三种方案真实报价</a></h3>
+<div class="row"><span class="tag">模板/智能建站¥600-2000首年 / 半定制¥980-5000 / 整站全定制¥20000起</span><span class="tag">行业资讯·搜索抽样</span></div>
+<div class="row"><b>技术要求：</b>模板站/半定制小功能（查询/表单/后台）/整站定制</div>
+<div class="row"><b>匹配度：</b>10天前更新的2026真实报价帖，把三档价格带一次说透；&quot;半定制小功能&quot;最值得吃——序列号查询、在线价格表这类&quot;活功能&quot;¥980起、3天交付，正好是用户工程能力的甜点区。</div></div><div class="card"><h3><a href="https://www.qicaiyun.top/4730.html">2026七款AI建站工具对比：价格不是关键，能否迁走才是</a></h3>
+<div class="row"><span class="tag">Wix/Framer等约$10-40/月，基本和国内云建站¥600-2000/年同级</span><span class="tag">行业资讯·搜索抽样</span></div>
+<div class="row"><b>技术要求：</b>Wix AI/Framer AI/10Web/WordPress自托管</div>
+<div class="row"><b>匹配度：</b>7款主流AI建站工具横向测评的核心结论：AI工具只管&quot;上线那一刻&quot;，后续30个服务页面、SEO、迁走都靠人——这恰好是接单的入口：用AI做脚手架、收&quot;落地+运营&quot;的钱。</div></div><div class="card"><h3><a href="https://www.tuokekeji.com/news_17/907.html">2026外贸独立站：英文多语言商城定制开发</a></h3>
+<div class="row"><span class="tag">标准档1.5-4万 / 专业档5万+</span><span class="tag">行业资讯·搜索抽样</span></div>
+<div class="row"><b>技术要求：</b>WordPress+多语言本地化、海外服务器+CDN、SEO/GEO优化</div>
+<div class="row"><b>匹配度：</b>佛山/东莞/深圳制造业外贸转型刚需；多语言本地化+SEO/GEO的门槛挡掉低价竞争者，利润空间好，且GEO是2026年新增卖点。</div></div></div><h2 class="section">四、价格参考</h2>
+<table class="dtable"><thead><tr><th>类型</th><th>低端</th><th>中端</th><th>高端</th></tr></thead>
+<tbody><tr><td><b>品牌官网</b></td><td>0.3-1万元</td><td>1.5-5万元</td><td>8-20万元+</td></tr><tr><td><b>外贸独立站</b></td><td>0.3-0.8万元</td><td>1.5-4万元</td><td>5-15万元+</td></tr><tr><td><b>电商/功能型网站</b></td><td>2-8万元</td><td>8-20万元</td><td>20-50万元+</td></tr><tr><td><b>微信小程序定制</b></td><td>SaaS年费数千元</td><td>2-6万元</td><td>8-30万元+</td></tr><tr><td><b>n8n/自动化代搭建</b></td><td>¥1000起/单流程</td><td>¥2000-8000</td><td>AI Agent流程¥8000+/多应用联动</td></tr><tr><td><b>模板站/二次开发</b></td><td>800-2000元</td><td>3000-8000元</td><td>—</td></tr><tr><td><b>年维护费</b></td><td>1000-3000元/年</td><td>3000-10000元/年</td><td>开发费10-20%</td></tr></tbody></table><h2 class="section">五、接单切入点</h2><div class="entry"><h3>n8n自动化代搭建：把Zapier涨价红利吃到手</h3><p>Zapier 2024年涨价40%后中小客户出逃，Upwork上n8n代搭建三档明码标价（$75-$999），AI Agent流程$800起；国内这块还处于蓝海，正好对口用户技能。</p><p><b>第一步：</b>按Upwork三档做报价表（单流程¥1000+/多系统联动¥3000+/AI Agent流程¥8000+），先给一个熟人客户或自家搭个演示流程，把交付清单写成标准模板。</p></div><div class="entry"><h3>外贸多语言独立站（中英/多语种+SEO/GEO）</h3><p>深圳周边制造业外贸转型的刚需，多语言本地化与SEO/GEO门槛天然过滤低价竞争者，客单价好且复购（内容运营）空间大。</p><p><b>第一步：</b>用WordPress搭一个英文演示站（含询盘表单、SEO埋点、GEO优化说明），作为投标附件；把&quot;交付完整源码&quot;写进方案首页。</p></div><div class="entry"><h3>中小企业官网「半定制+源码交付」标准化交付</h3><p>需求量最大、最稳定的一类。2026年客户核心诉求从&quot;便宜&quot;转向&quot;源码交付+能自主更新&quot;，标准化报价单可直接复用。</p><p><b>第一步：</b>按合肥8000元档实例（原创首页+6产品分类页+12内页+询盘表单+后台+SEO基础+源码交付）做一份标准化报价单和演示站，先跑通第一单交付流程。</p></div><div class="compact" style="margin-top:20px;color:var(--muted);font-size:13.5px">数据源与实测结论：程序员客栈今日经浏览器多轮实测——站内无需求大厅入口、搜索强制跳转登录页、官方帮助站无收录，需求列表需登录后查看（未登录，不编造）；猪八戒首页curl可拉但需求列表为JS渲染，需求搜索页昨日实测被滑块验证码与限速拦截。两平台均未抓到有效需求条目；本期未编造任何需求条目，需求侧结论沿用10-21期实采口径，价格锚点来自2026年10月内更新的公开报价（深圳/广州/合肥/佛山服务商报价、Upwork n8n代搭建真实价格档、AI建站横向测评），featured链接均为可验证的真实资讯页。2026-10-22期日报因故未发布，归档序列中缺失该日期。</div><footer>数据来源：程序员客栈 / 猪八戒等平台公开需求、市场公开报价 · 仅供接单参考，不构成承诺</footer>
+</div><script>
+const ARCHIVE_DATES=["2026-10-24","2026-10-23","2026-10-21","2026-10-20","2026-10-19","2026-10-18","2026-10-17","2026-10-16","2026-10-15","2026-10-14","2026-10-13"];const CURRENT_DATE="2026-10-24";
+document.getElementById("dp").addEventListener("change",function(){var v=this.value;if(ARCHIVE_DATES.indexOf(v)>=0){location.href=v+".html";}else{this.value=CURRENT_DATE;}});
+</script></body></html>
