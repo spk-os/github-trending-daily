@@ -65,7 +65,7 @@ a{color:var(--accent)}
 <header class="hero"><div class="hero-top"><div>
 <h1>GitHub 日报</h1>
 <div class="meta">2026-10-23 · Star/Fork 仓库动态 + Trending 深度报告</div></div>
-<div class="dateselect"><label for="dp">选择日期</label><input type="date" id="dp" min="2026-10-10" max="2026-10-23" value="2026-10-23"></div>
+<div class="dateselect"><label for="dp">选择日期</label><input type="date" id="dp" min="2026-10-10" max="2026-10-24" value="2026-10-23"></div>
 </div></header>
 
 <h2 class="section">一、Star / Fork 仓库动态</h2>
@@ -94,7 +94,7 @@ a{color:var(--accent)}
 <p><b>是什么：</b>VoiceStudio 本地免费语音克隆+视频配音+有声书制作，还带 MCP 可接 agent 工作流；短视频/课程配音是真需求。</p><p><b>为什么值得做：</b>本地运行=零 API 成本，接单毛利高；646 语言覆盖是差异化卖点；注意 AGPL-3.0 与默认模型非商用许可的边界。</p><p><b>第一步：</b>本周本地装 VoiceStudio，录一条中文配音 demo 发 B 站/视频号验流量；跑通后再去猪八戒挂“AI 配音/有声书代做”。</p></div><div class="opp"><h3>机会 3：agent 降本轻咨询（延续 10-22）</h3>
 <p><b>是什么：</b>ponytail（成本可视化）+ context-mode（98% 压缩）证明企业开始为 token 账单肉疼；做“agent 降本”诊断：prompt 瘦身、压缩中间件落地、缓存策略。</p><p><b>为什么值得做：</b>痛点真实且可量化（省了多少 token/钱一算便知）；交付轻、不碰客户核心代码，适合个人切入。</p><p><b>第一步：</b>用 context-mode/headroom 给自己的一个项目做一次实测，算出 token 节省比例和金额，做成一页案例，再去目标客户群里发。</p></div><div class="compact"><b>明确不跟：</b>morluto/rea（周 +10.6 万、总 36.6 万仍在病毒传播；但依赖商业逆向工具、有法律灰色地带，延续 10-20 判断）、ruvnet/ruflo（周 +3,708；多 agent 编排已是红海，延续 10-20 判断）、shiyu-coder/Kronos（4 月后无实质更新，金融叙事情绪盘，延续 10-22 判断）——围观即可，不硬凑。</div><footer>数据来源：GitHub Trending（daily / weekly）与 GitHub REST API · 趋势判断为分析师观点，仅供参考</footer>
 </div><script>
-const ARCHIVE_DATES=["2026-10-23","2026-10-22","2026-10-21","2026-10-20","2026-10-19","2026-10-18","2026-10-17","2026-10-16","2026-10-15","2026-10-14","2026-10-13","2026-10-12","2026-10-11","2026-10-10"];const CURRENT_DATE="2026-10-23";
+const ARCHIVE_DATES=["2026-10-24","2026-10-23","2026-10-22","2026-10-21","2026-10-20","2026-10-19","2026-10-18","2026-10-17","2026-10-16","2026-10-15","2026-10-14","2026-10-13","2026-10-12","2026-10-11","2026-10-10"];const CURRENT_DATE="2026-10-23";
 document.getElementById("dp").addEventListener("change",function(){var v=this.value;if(ARCHIVE_DATES.indexOf(v)>=0){location.href=v+".html";}else{this.value=CURRENT_DATE;}});
 </script>
 <script>
