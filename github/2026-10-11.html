@@ -61,7 +61,7 @@ a{color:var(--accent)}
 <header class="hero"><div class="hero-top"><div>
 <h1>GitHub 日报</h1>
 <div class="meta">2026-10-11 · Star/Fork 仓库动态 + Trending 深度报告</div></div>
-<div class="dateselect"><label for="dp">选择日期</label><input type="date" id="dp" min="2026-10-10" max="2026-10-23" value="2026-10-11"></div>
+<div class="dateselect"><label for="dp">选择日期</label><input type="date" id="dp" min="2026-10-10" max="2026-10-24" value="2026-10-11"></div>
 </div></header>
 
 <h2 class="section">一、Star / Fork 仓库动态</h2>
@@ -90,7 +90,7 @@ a{color:var(--accent)}
 <p><b>是什么：</b>用 ppt-master（文档→原生 pptx）+ hyperframes（HTML→MP4）接单：BP 美化、课程 PPT、产品短视频。</p><p><b>为什么值得做：</b>客户为“成品”付费；全用现成开源工具，成本只有模型 API 费。</p><p><b>第一步：</b>给自己做 10 页服务介绍 PPT + 30 秒介绍视频当作品集，猪八戒定价 300-800 元/份先跑 5 单。</p></div><div class="opp"><h3>机会 3：“AI 网关 + 上下文成本优化”部署（利润最厚）</h3>
 <p><b>是什么：</b>卖“网关部署 + 用量审计 + 压缩调优”一次性服务 + 年维护费，不卖代码。</p><p><b>为什么值得做：</b>你懂网关和 Docker；“帮你省 30% token 账单”是可量化的 ROI，比卖工具好卖。</p><p><b>第一步：</b>VPS 上 Docker 部署 context-mode（ELv2 许可：只做部署、不分发代码），跑一周记录省了多少 token，做成一页 PDF 案例。</p></div><div class="compact"><b>明确不跟：</b>rea（依赖商业逆向工具、有法律灰色地带）、AnyPS5（索尼法律风险悬顶、仅 1 款 2D 小游戏验证可玩）、artcraft（叙事泡沫、产品远未可用）——三者都是围观型热点，普通开发者无套利空间，不硬凑。</div><footer>数据来源：GitHub Trending（daily / weekly）与 GitHub REST API · 趋势判断为分析师观点，仅供参考</footer>
 </div><script>
-const ARCHIVE_DATES=["2026-10-23","2026-10-22","2026-10-21","2026-10-20","2026-10-19","2026-10-18","2026-10-17","2026-10-16","2026-10-15","2026-10-14","2026-10-13","2026-10-12","2026-10-11","2026-10-10"];const CURRENT_DATE="2026-10-11";
+const ARCHIVE_DATES=["2026-10-24","2026-10-23","2026-10-22","2026-10-21","2026-10-20","2026-10-19","2026-10-18","2026-10-17","2026-10-16","2026-10-15","2026-10-14","2026-10-13","2026-10-12","2026-10-11","2026-10-10"];const CURRENT_DATE="2026-10-11";
 document.getElementById("dp").addEventListener("change",function(){var v=this.value;if(ARCHIVE_DATES.indexOf(v)>=0){location.href=v+".html";}else{this.value=CURRENT_DATE;}});
 </script>
 <script>
