@@ -65,7 +65,7 @@ a{color:var(--accent)}
 <header class="hero"><div class="hero-top"><div>
 <h1>GitHub 日报</h1>
 <div class="meta">2026-10-26 · Star/Fork 仓库动态 + Trending 深度报告</div></div>
-<div class="dateselect"><label for="dp">选择日期</label><input type="date" id="dp" min="2026-10-10" max="2026-10-30" value="2026-10-26"></div>
+<div class="dateselect"><label for="dp">选择日期</label><input type="date" id="dp" min="2026-10-10" max="2026-10-31" value="2026-10-26"></div>
 </div></header>
 
 <h2 class="section">一、Star / Fork 仓库动态</h2>
@@ -96,7 +96,7 @@ a{color:var(--accent)}
 <p><b>是什么：</b>给 AI 生成的官网/落地页做视觉审查：排版、字体、留白、对比度，按 hallmark 与 impeccable 的规则逐项改。</p><p><b>为什么值得做：</b>两个设计工具同日上榜说明客户已能一眼看出 AI 味；审查按页收费、交付快，比重做整站好卖。</p><p><b>第一步：</b>用 hallmark + impeccable 给 3 个 AI 生成的落地页做审查，整理成 1 页“去AI味检查清单”当作品集，再按页收费接单。</p></div><div class="opp"><h3>机会 3：AI 时代 SEO/GEO 优化包</h3>
 <p><b>是什么：</b>给企业官网做面向 AI 搜索的优化：技术 SEO、E-E-A-T、schema、llms.txt 与 agent 可读性，打包成一次服务。</p><p><b>为什么值得做：</b>claude-seo 含 26 个子 skill 与 19 个子 agent，工具链已现成；客户为搜索可见性付费，效果可用收录与引用验证。</p><p><b>第一步：</b>用 claude-seo 给自己站点跑一遍，产出含 llms.txt、schema、GEO 检查的 1 份样例报告，再向有官网的小企业报价。</p></div><div class="compact"><b>明确不跟：</b>VoiceStudio（已在观察清单，本地语音重模型与算力）、Renhuai123/ziwei-doushu（已在观察清单，传统文化工具变现路径窄）、microduck（开源硬件，重资产、非软件赛道）、ruvnet/ruflo（周 +2,987，但已在不跟清单）、TradingAgents（交易框架，回测不等于实盘收益，不作投资推荐）——五者只看不跟，不硬凑。</div><footer>数据来源：GitHub Trending（daily / weekly）与 GitHub REST API · 趋势判断为分析师观点，仅供参考</footer>
 </div><script>
-const ARCHIVE_DATES=["2026-10-30","2026-10-29","2026-10-28","2026-10-27","2026-10-26","2026-10-25","2026-10-24","2026-10-23","2026-10-22","2026-10-21","2026-10-20","2026-10-19","2026-10-18","2026-10-17","2026-10-16","2026-10-15","2026-10-14","2026-10-13","2026-10-12","2026-10-11","2026-10-10"];const CURRENT_DATE="2026-10-26";
+const ARCHIVE_DATES=["2026-10-31","2026-10-30","2026-10-29","2026-10-28","2026-10-27","2026-10-26","2026-10-25","2026-10-24","2026-10-23","2026-10-22","2026-10-21","2026-10-20","2026-10-19","2026-10-18","2026-10-17","2026-10-16","2026-10-15","2026-10-14","2026-10-13","2026-10-12","2026-10-11","2026-10-10"];const CURRENT_DATE="2026-10-26";
 document.getElementById("dp").addEventListener("change",function(){var v=this.value;if(ARCHIVE_DATES.indexOf(v)>=0){location.href=v+".html";}else{this.value=CURRENT_DATE;}});
 </script>
 <script>
