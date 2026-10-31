@@ -65,7 +65,7 @@ a{color:var(--accent)}
 <header class="hero"><div class="hero-top"><div>
 <h1>GitHub 日报</h1>
 <div class="meta">2026-10-16 · Star/Fork 仓库动态 + Trending 深度报告</div></div>
-<div class="dateselect"><label for="dp">选择日期</label><input type="date" id="dp" min="2026-10-10" max="2026-10-30" value="2026-10-16"></div>
+<div class="dateselect"><label for="dp">选择日期</label><input type="date" id="dp" min="2026-10-10" max="2026-10-31" value="2026-10-16"></div>
 </div></header>
 
 <h2 class="section">一、Star / Fork 仓库动态</h2>
@@ -100,7 +100,7 @@ a{color:var(--accent)}
 <p><b>是什么：</b>VoiceStudio（646 语言、纯本地）+ 视频配音/有声书流程，打包成“本地化配音工作站”卖给自媒体和出海团队。</p><p><b>为什么值得做：</b>客户为成品付费；本地部署解决隐私顾虑；配音是持续性需求，不是一锤子买卖。</p><p><b>第一步：</b>本周在自己机器部署 VoiceStudio，录一条中英双语配音 demo 发视频号，再去猪八戒挂“AI 配音代做”。</p></div><div class="opp"><h3>机会 3：小团队 token 账单审计</h3>
 <p><b>是什么：</b>给用 Claude Code/Codex 的小团队做 token 用量审计 + context-mode/caveman 部署，按省下的费用提成。</p><p><b>为什么值得做：</b>caveman（省 65% meme 出圈）、context-mode（98% 压缩）印证这是真痛点；按效果收费比卖工具好谈。</p><p><b>第一步：</b>给自己的 Claude Code 先装 context-mode 跑一周，记录省了多少 token，做成一页 PDF 案例。</p></div><div class="compact"><b>明确不跟：</b>rea（依赖商业逆向工具、有法律灰色地带）、AnyPS5（索尼法律风险悬顶）仍是围观型热点，普通开发者无套利空间；caveman 的 meme 热度来得快去得也快，不押注——三者都不硬凑。</div><footer>数据来源：GitHub Trending（daily / weekly）与 GitHub REST API · 趋势判断为分析师观点，仅供参考</footer>
 </div><script>
-const ARCHIVE_DATES=["2026-10-30","2026-10-29","2026-10-28","2026-10-27","2026-10-26","2026-10-25","2026-10-24","2026-10-23","2026-10-22","2026-10-21","2026-10-20","2026-10-19","2026-10-18","2026-10-17","2026-10-16","2026-10-15","2026-10-14","2026-10-13","2026-10-12","2026-10-11","2026-10-10"];const CURRENT_DATE="2026-10-16";
+const ARCHIVE_DATES=["2026-10-31","2026-10-30","2026-10-29","2026-10-28","2026-10-27","2026-10-26","2026-10-25","2026-10-24","2026-10-23","2026-10-22","2026-10-21","2026-10-20","2026-10-19","2026-10-18","2026-10-17","2026-10-16","2026-10-15","2026-10-14","2026-10-13","2026-10-12","2026-10-11","2026-10-10"];const CURRENT_DATE="2026-10-16";
 document.getElementById("dp").addEventListener("change",function(){var v=this.value;if(ARCHIVE_DATES.indexOf(v)>=0){location.href=v+".html";}else{this.value=CURRENT_DATE;}});
 </script>
 <script>
