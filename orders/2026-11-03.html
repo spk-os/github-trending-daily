@@ -40,7 +40,7 @@ a{color:var(--accent)}
 <header class="hero"><div class="hero-top"><div>
 <h1>网站需求接单分析报告</h1>
 <div class="meta">2026-11-03 · 网站类外包需求扫描、价格区间与接单切入点</div></div>
-<div class="dateselect"><label for="dp">选择日期</label><input type="date" id="dp" min="2026-10-13" max="2026-11-03" value="2026-11-03"></div>
+<div class="dateselect"><label for="dp">选择日期</label><input type="date" id="dp" min="2026-10-13" max="2026-11-04" value="2026-11-03"></div>
 </div></header>
 
 <h2 class="section">一、今日需求速览</h2>
@@ -62,6 +62,6 @@ a{color:var(--accent)}
 <table class="dtable"><thead><tr><th>类型</th><th>低端</th><th>中端</th><th>高端</th></tr></thead>
 <tbody><tr><td><b>品牌官网</b></td><td>600–3,999 元</td><td>0.5–1.5 万元</td><td>2–8 万元</td></tr><tr><td><b>电商 / 商城</b></td><td>模板 0.3–1.2 万元</td><td>源码二开 2–8 万元</td><td>定制 5–30 万元</td></tr><tr><td><b>外贸独立站</b></td><td>GEO 站 1,680 元/年</td><td>老牌定制 9,800 元起</td><td>定制 2–4 万元</td></tr><tr><td><b>模板站</b></td><td>模板 600–3,999 元</td><td>SaaS 3,000–8,000 元/年</td><td>WordPress 定制 0.5–1.5 万元</td></tr><tr><td><b>年维护 / 代运营</b></td><td>开发费 10%–20%/年</td><td>GEO 轻量 9,800 元/年</td><td>GEO 旗舰 29,980 元/年</td></tr></tbody></table><h2 class="section">五、接单切入点</h2><div class="entry"><h3>按 2026 四档预算重写报价单</h3><p>2026 指南刚刷新预算四档：低于 3,000 元走 SaaS、3,000–2 万元模板或轻定制、2–10 万元半定制、10 万元以上完整定制，报价单按此分层可直接对标。</p><p><b>第一步：</b>把自己的服务报价单按四档重写一版，每档写清包含功能、周期与不包含项，挂到服务详情页。</p></div><div class="entry"><h3>把 GEO 结构化内容做成交付标配</h3><p>2026 指南把 AI 搜索入口列为建站必选项：站点要有清晰结构化内容，否则在 AI 问答里拿不到曝光，GEO 从可选项变标配。</p><p><b>第一步：</b>给已交付的 1–2 个客户站补 Schema 与 llms.txt，做一份前后对比截图，作为 GEO 代运营的成交证据。</p></div><div class="entry"><h3>小程序 + AI 工作流打包，不拼起价</h3><p>猪八戒小程序起价已卷到 205 元，拼价格必死；差异化是“小程序 + AI 客服 / 自动跟进 / 网关部署”打包卖。</p><p><b>第一步：</b>给已有小程序模板加一个 Dify 客服 + 表单自动入库的演示，截图放进服务详情，报价单里单列 AI 工作流一项。</p></div><div class="compact" style="margin-top:20px;color:var(--muted);font-size:13.5px">数据来源与局限：程序员客栈与猪八戒需求列表页均为 JS 渲染，今日 curl 仍只抓到 3.7KB 占位页，未拿到逐条需求帖预算；价格锚点来自 2026 年 11 月初刚更新的公开指南（syour 2026 系列）与服务商报价页（星瀚云链），非平台成交价；下单前以平台实际需求帖为准。</div><footer>数据来源：程序员客栈 / 猪八戒等平台公开需求、市场公开报价 · 仅供接单参考，不构成承诺</footer>
 </div><script>
-const ARCHIVE_DATES=["2026-11-03","2026-11-02","2026-11-01","2026-10-31","2026-10-30","2026-10-29","2026-10-28","2026-10-27","2026-10-26","2026-10-25","2026-10-24","2026-10-23","2026-10-21","2026-10-20","2026-10-19","2026-10-18","2026-10-17","2026-10-16","2026-10-15","2026-10-14","2026-10-13"];const CURRENT_DATE="2026-11-03";
+const ARCHIVE_DATES=["2026-11-04","2026-11-03","2026-11-02","2026-11-01","2026-10-31","2026-10-30","2026-10-29","2026-10-28","2026-10-27","2026-10-26","2026-10-25","2026-10-24","2026-10-23","2026-10-21","2026-10-20","2026-10-19","2026-10-18","2026-10-17","2026-10-16","2026-10-15","2026-10-14","2026-10-13"];const CURRENT_DATE="2026-11-03";
 document.getElementById("dp").addEventListener("change",function(){var v=this.value;if(ARCHIVE_DATES.indexOf(v)>=0){location.href=v+".html";}else{this.value=CURRENT_DATE;}});
 </script></body></html>
