@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>网站需求接单分析 · 2026-11-08</title><style>
+:root{--ink:#1a1a1a;--muted:#666;--line:#e8e8e8;--accent:#0969da;--bg:#fafbfc;--card:#fff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.75}
+.wrap{max-width:100%;margin:0 auto;padding:32px 44px 80px}
+header.hero{border-bottom:3px solid var(--ink);padding-bottom:20px;margin-bottom:32px}
+.hero-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+header.hero h1{margin:0 0 8px;font-size:30px}
+header.hero .meta{color:var(--muted);font-size:14px}
+.dateselect{display:flex;align-items:center;gap:10px;padding-top:6px}
+.dateselect label{font-size:14px;color:var(--muted);white-space:nowrap}
+.dateselect input[type="date"]{font-size:14px;padding:7px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);cursor:pointer}
+.sitenav{display:flex;gap:8px;margin-bottom:24px;flex-wrap:wrap}
+.sitenav a{font-size:14px;padding:6px 16px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--muted);background:#fff;white-space:nowrap}
+.sitenav a.active{color:var(--accent);border-color:var(--accent)}
+.sitenav a:hover{color:var(--accent)}
+h2.section{font-size:22px;margin:44px 0 20px;padding-left:12px;border-left:5px solid var(--accent)}
+.dtable{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:12px;font-size:14.5px;overflow:hidden}
+.dtable th,.dtable td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.dtable thead th{background:#f6f8fa;font-size:13px;color:var(--muted)}
+.dtable tbody tr:last-child td{border-bottom:none}
+.compact{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 24px;font-size:14.5px;color:#333;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 24px}
+.card h3{margin:0 0 8px;font-size:16.5px}
+.card h3 a{color:var(--accent);text-decoration:none}
+.card .row{font-size:14px;margin:6px 0;color:#333}
+.card .row b{color:#111}
+.card .tag{font-size:12px;background:#f1f4f9;border:1px solid var(--line);border-radius:6px;padding:1px 8px;margin-right:6px;color:#555;white-space:nowrap}
+.entry{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 26px;margin-bottom:14px}
+.entry h3{margin:0 0 8px;font-size:16.5px}
+.entry p{margin:6px 0;font-size:14.5px}
+footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+a{color:var(--accent)}
+@media(max-width:700px){.wrap{padding:20px 16px 60px}}
+</style></head><body><div class="wrap">
+<nav class="sitenav"><a href="../">日报中心</a><a href="../github/">GitHub 分析</a><a href="../orders/" class="active">接单分析</a><a href="../opportunities/">机会执行</a></nav>
+<header class="hero"><div class="hero-top"><div>
+<h1>网站需求接单分析报告</h1>
+<div class="meta">2026-11-08 · 网站类外包需求扫描、价格区间与接单切入点</div></div>
+<div class="dateselect"><label for="dp">选择日期</label><input type="date" id="dp" min="2026-10-13" max="2026-11-08" value="2026-11-08"></div>
+</div></header>
+
+<h2 class="section">一、今日需求速览</h2>
+<div class="compact">今日需求速览：两份 5 天前新指南把轻定制锚定在 6,800–12,800 元、7–15 天，8,000–12,000 元最常见；景德镇品牌官网定制 4.8–12.8 万元、电商 9.8–39.8 万元，区域价差拉大；智能体新增佛山口径：基础自动化 15–30 万元、专业级 30–80 万元，数据清洗可占总成本 40%+；客栈兼职池 1,271,443 人（+331），今日作品出现 RAG 问答助手、AI Wiki、MCP 插件。</div><h2 class="section">二、需求分类与价格</h2>
+<table class="dtable"><thead><tr><th>类别</th><th>需求量</th><th>预算区间</th><th>主流技术栈</th><th>备注</th></tr></thead>
+<tbody><tr><td><b>企业品牌官网</b></td><td>两份 5 天前新指南集中更新</td><td>模板 1,980–8,000 元，轻定制 6,800–12,800 元，功能定制 1.5–3.5 万元；景德镇品牌定制 4.8–12.8 万元</td><td>WordPress / Next.js + CMS、响应式前端</td><td>61f2 新口径：8,000–12,000 元的轻定制最常见，超预算须新增可量化功能；模板 3–7 天、轻定制 7–15 天、功能定制 15–45 天。</td></tr><tr><td><b>微信小程序</b></td><td>昨日实测 15 条，今日未取到</td><td>挂牌价 110–4,800 元，中位数 1,000 元；整包定制 2–5 万元</td><td>Uni-app / Taro + 云开发、微信支付</td><td>猪八戒今日首页 curl 仅拿到导航，热销榜价目未取到；昨日实测 15 条 110–4,800 元、中位数 1,000 元仍作参考，低价引流属性不变。</td></tr><tr><td><b>电商 / 商城系统</b></td><td>景德镇新口径抬高起步价</td><td>模板 0.3–1.5 万元，半定制 1.5–6 万元，纯定制 9.8–39.8 万元</td><td>Vue + Node.js / Java、支付与物流对接</td><td>景德镇指南 9 天前更新：电商系统 9.8–39.8 万元、75–180 天，含支付与风控更慢；带支付与会员的系统 3–5 万元、40–75 天仍是个人可接的中高客单档。</td></tr><tr><td><b>外贸独立站 + GEO</b></td><td>稳定</td><td>模板 3,000–8,000 元，基础定制 1.2–3 万元，B2B 商城 5 万元以上</td><td>WordPress / Shopify、多语言、Schema + llms.txt</td><td>口径与昨日一致；Shopify 月费 27 美元起（约 189 元），AI 建站工具月费 35–210 元，SaaS 订阅是持续成本不是一次性费用。</td></tr><tr><td><b>AI 智能体 / 知识库定制</b></td><td>两份新报价拆解集中更新</td><td>验证型 3–15 万元，业务级 15–60 万元，企业级 60–200 万元+；佛山基础自动化 15–30 万元、专业级 30–80 万元</td><td>Dify / RAGFlow、n8n、LangChain、私有化部署</td><td>thinkingai 6 天前更新：数据清洗与知识工程可占总成本 40%+；星光AI 佛山口径：私有化比 SaaS 贵 30%–50%，每增一个非标准接口 +2–5 万元；客栈今日出现 RAG 问答助手、AI Wiki、智能销售自动化 SaaS、MCP 浏览器插件等作品。</td></tr><tr><td><b>网站二次开发 / 运维</b></td><td>稳定</td><td>单次改造 0.5–3 万元，年维护为开发费 10%–20%，外包维护 800–5,000 元/月</td><td>原站技术栈、性能优化、安全加固</td><td>三份指南一致确认维护费 10%–20%/年，智能体年服务费 15%–30%；61f2 新拆解：域名 60–120 元/年、云服务器 600–2,400 元/年、SSL 0–800 元/年、维护 0–2,400 元/年，次年维护价须单列。</td></tr></tbody></table><h2 class="section">三、值得跟进的需求</h2><div class="grid"><div class="card"><h3><a href="http://www.61f2.com/readnews/29497/">新乡网站建设指南：2026 费用、周期与验收标准</a></h3>
+<div class="row"><span class="tag">模板 1,980–4,800 元，轻定制 6,800–12,800 元，功能定制 15,000–35,000 元；SaaS 年费 3,600–9,800 元</span><span class="tag">新乡专业网站建设公司指南（5 天前更新）</span></div>
+<div class="row"><b>技术要求：</b>模板建站 / 轻定制 / SaaS、响应式前端</div>
+<div class="row"><b>匹配度：</b>5 天前更新，轻定制 6,800–12,800 元、7–15 天是最新的接单锚点；年成本拆解（域名 60–120、服务器 600–2,400、SSL 0–800、维护 0–2,400 元/年）可直接抄进报价单。</div></div><div class="card"><h3><a href="http://www.61f2.com/readnews/29525/">网站建设定制需要多少钱？2026 年报价区间与流程指南</a></h3>
+<div class="row"><span class="tag">定制均价 1.2–8 万元；官网 8,000–25,000 元，交互型 2.5–6 万元，复杂系统 6–12 万元+</span><span class="tag">网站建设定制报价指南（5 天前更新）</span></div>
+<div class="row"><b>技术要求：</b>定制开发、会员 / 预约 / 支付系统</div>
+<div class="row"><b>匹配度：</b>5 天前更新，分档与 syour 口径互相印证：展示型 2–4 周、复杂型 6–10 周，建议按里程碑分 3–4 次付款，可直接作收款节奏参考。</div></div><div class="card"><h3><a href="http://www.syour.com/show-869.html">2026 景德镇网站建设推广开发有限公司：费用、周期与流程指南</a></h3>
+<div class="row"><span class="tag">品牌官网定制 4.8–12.8 万元、45–90 天；营销落地页 1.6–4.8 万元；电商 9.8–39.8 万元</span><span class="tag">景德镇网站建设推广开发有限公司指南（9 天前更新）</span></div>
+<div class="row"><b>技术要求：</b>品牌官网定制、营销落地页、电商系统</div>
+<div class="row"><b>匹配度：</b>9 天前更新，区域价差证据：同档品牌官网比一线指南贵约 2 倍、周期翻倍，报价时须按客户所在城市调档，不能照搬一线价。</div></div><div class="card"><h3><a href="https://www.xingguangai.cn/news/2435/">2026 佛山企业 AI 智能体定制选型与价格指南</a></h3>
+<div class="row"><span class="tag">基础自动化 15–30 万元，专业级 30–80 万元，企业级 100–300 万元+；单场景轻量 5–15 万元</span><span class="tag">2026 佛山企业 AI 智能体定制选型与价格指南（7 天前更新）</span></div>
+<div class="row"><b>技术要求：</b>知识库问答、智能客服、流程自动化、私有化部署</div>
+<div class="row"><b>匹配度：</b>7 天前更新，佛山本地口径与 thinkingai 三档互相印证；私有化贵 30%–50%、每增接口 +2–5 万元、年维护 15%–25%，是报价单最缺的三行。</div></div><div class="card"><h3><a href="https://www.proginn.com/cat/">程序员客栈：整包开发与远程工作需求入口</a></h3>
+<div class="row"><span class="tag">整包 2–5 万元为主；兼职程序员月租 6,525–43,500 元</span><span class="tag">程序员客栈（今日实测）</span></div>
+<div class="row"><b>技术要求：</b>按项目定，前端 / 后端 / 小程序 / AI 全栈</div>
+<div class="row"><b>匹配度：</b>今日实测兼职池 1,271,443 人（较昨日 +331），30 条月租样本最常见 17,400 元；今日作品出现 RAG 问答助手、AI Wiki、智能销售自动化、MCP 插件，AI 落地供给正在冒头。</div></div></div><h2 class="section">四、价格参考</h2>
+<table class="dtable"><thead><tr><th>类型</th><th>低端</th><th>中端</th><th>高端</th></tr></thead>
+<tbody><tr><td><b>品牌官网</b></td><td>模板 1,980–8,000 元</td><td>标准定制 1–3 万元</td><td>品牌营销型 2–6 万元（景德镇定制 4.8–12.8 万元）</td></tr><tr><td><b>电商 / 商城</b></td><td>模板 0.3–1.5 万元</td><td>半定制 1.5–6 万元</td><td>纯定制 9.8–39.8 万元</td></tr><tr><td><b>外贸独立站</b></td><td>模板 3,000–8,000 元</td><td>基础定制 1.2–3 万元</td><td>B2B 商城 5 万元以上</td></tr><tr><td><b>AI 智能体</b></td><td>轻量平台 0–2 万元</td><td>验证型 3–15 万元</td><td>业务级 15–60 万元（企业级 100–300 万元+）</td></tr><tr><td><b>模板站</b></td><td>SaaS 自助 600–3,600 元/年</td><td>模板外包 3,000–15,000 元</td><td>WordPress 定制 0.5–1.5 万元</td></tr><tr><td><b>年维护 / 代运营</b></td><td>开发费 10%–20%/年</td><td>外包维护 800–5,000 元/月</td><td>智能体年服务费 15%–30%</td></tr></tbody></table><h2 class="section">五、接单切入点</h2><div class="entry"><h3>轻定制 6,800–12,800 元是今日最明确的接单档</h3><p>两份 5 天前新指南一致：轻定制（主题/框架二开）6,800–12,800 元、7–15 天，企业官网展示 + 表单获客是个人最顺手的档；8,000–12,000 元最常见，超预算须新增可量化功能。</p><p><b>第一步：</b>在客栈服务页挂一个“轻定制官网 6,800–12,800 元、7–15 天交付”服务，写清含栏目、表单、手机端、统计、备份五项验收清单。</p></div><div class="entry"><h3>智能体报价必须单列数据清洗与接口费</h3><p>thinkingai：数据清洗与知识工程可占总成本 40%+；星光AI：每增一个非标准接口 +2–5 万元，私有化比 SaaS 贵 30%–50%；不单列这两项，验证型 3–15 万元的报价必亏。</p><p><b>第一步：</b>报价单模板加两行：知识库整理费（按文档量计）与接口对接费（每个非标准接口 2–5 万元），私有化部署单列算力与年运维。</p></div><div class="entry"><h3>客栈 AI 作品已出现 MCP 与销售自动化，拼“开发 + 上线托管”打包单</h3><p>今日客栈作品出现 AI Wiki 知识库、智能销售自动化 SaaS、MCP 浏览器插件、RAG 问答助手；供给正在从“写代码”转向“AI 落地 + 交付上线”，正是用户网关 + Docker 能力的对口方向。</p><p><b>第一步：</b>服务页加一句“网关 + Docker 交付，含部署与首月运维”，瞄准知识库问答与销售自动化两类验证型单。</p></div><div class="compact" style="margin-top:20px;color:var(--muted);font-size:13.5px">数据来源受限说明：程序员客栈与猪八戒分类列表页为 JS 渲染，curl 仅能拿到供给侧页面；客栈今日实测兼职池 1,271,443 人（较昨日 +331）、30 条月租样本 6,525–43,500 元，猪八戒今日首页未取到热销榜价目（昨日实测 15 条小程序 110–4,800 元、中位数 1,000 元仍作参考）；预算口径来自 5–9 天前更新的 61f2 两份建站指南、syour 景德镇指南与 thinkingai、星光AI 两份智能体报价拆解，非平台成交价，仅供接单定价参考。</div><footer>数据来源：程序员客栈 / 猪八戒等平台公开需求、市场公开报价 · 仅供接单参考，不构成承诺</footer>
+</div><script>
+const ARCHIVE_DATES=["2026-11-08","2026-11-07","2026-11-06","2026-11-05","2026-11-04","2026-11-03","2026-11-02","2026-11-01","2026-10-31","2026-10-30","2026-10-29","2026-10-28","2026-10-27","2026-10-26","2026-10-25","2026-10-24","2026-10-23","2026-10-21","2026-10-20","2026-10-19","2026-10-18","2026-10-17","2026-10-16","2026-10-15","2026-10-14","2026-10-13"];const CURRENT_DATE="2026-11-08";
+document.getElementById("dp").addEventListener("change",function(){var v=this.value;if(ARCHIVE_DATES.indexOf(v)>=0){location.href=v+".html";}else{this.value=CURRENT_DATE;}});
+</script></body></html>
