@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>超级个人机会执行 · 2026-11-13</title><style>
+:root{--ink:#1a1a1a;--muted:#666;--line:#e8e8e8;--accent:#0969da;--bg:#fafbfc;--card:#fff;--green:#1a7f37}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.75}
+.wrap{max-width:100%;margin:0 auto;padding:32px 44px 80px}
+header.hero{border-bottom:3px solid var(--ink);padding-bottom:20px;margin-bottom:32px}
+.hero-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+header.hero h1{margin:0 0 8px;font-size:30px}
+header.hero .meta{color:var(--muted);font-size:14px}
+.dateselect{display:flex;align-items:center;gap:10px;padding-top:6px}
+.dateselect label{font-size:14px;color:var(--muted);white-space:nowrap}
+.dateselect input[type="date"]{font-size:14px;padding:7px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);cursor:pointer}
+.sitenav{display:flex;gap:8px;margin-bottom:24px;flex-wrap:wrap}
+.sitenav a{font-size:14px;padding:6px 16px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--muted);background:#fff;white-space:nowrap}
+.sitenav a.active{color:var(--accent);border-color:var(--accent)}
+.sitenav a:hover{color:var(--accent)}
+h2.section{font-size:22px;margin:44px 0 20px;padding-left:12px;border-left:5px solid var(--accent)}
+.compact{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 24px;font-size:14.5px;color:#333;margin-bottom:14px}
+.statrow{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px;margin-bottom:8px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;text-align:center}
+.stat .num{font-size:28px;font-weight:700;color:var(--accent)}
+.stat .lbl{font-size:13px;color:var(--muted)}
+.task{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 22px;margin-bottom:12px;display:flex;gap:14px;align-items:flex-start}
+.task .box{flex:none;width:20px;height:20px;border:2px solid var(--line);border-radius:6px;margin-top:4px}
+.task.done .box{background:var(--green);border-color:var(--green)}
+.task.done .tt{text-decoration:line-through;color:var(--muted)}
+.task .tt{font-size:15px;font-weight:600}
+.task .meta{font-size:13px;color:var(--muted);margin-top:4px}
+.prog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 24px;margin-bottom:12px}
+.prog h3{margin:0 0 8px;font-size:16px}
+.prog .st{font-size:12.5px;border-radius:6px;padding:2px 10px;margin-left:8px;white-space:nowrap}
+.prog .st.doing{background:#ddf4ff;color:#0969da}
+.prog .st.pending{background:#f1f4f9;color:#555}
+.prog p{margin:6px 0;font-size:14px}
+.newitem{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 24px;margin-bottom:12px}
+.newitem h3{margin:0 0 6px;font-size:15.5px}
+.newitem p{margin:4px 0;font-size:14px;color:#333}
+footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+a{color:var(--accent)}
+@media(max-width:700px){.wrap{padding:20px 16px 60px}}
+</style></head><body><div class="wrap">
+<nav class="sitenav"><a href="../">日报中心</a><a href="../github/">GitHub 分析</a><a href="../orders/">接单分析</a><a href="../opportunities/" class="active">机会执行</a></nav>
+<header class="hero"><div class="hero-top"><div>
+<h1>超级个人机会执行</h1>
+<div class="meta">2026-11-13 · 机会池状态 + 每日行动清单</div></div>
+<div class="dateselect"><label for="dp">选择日期</label><input type="date" id="dp" min="2026-10-13" max="2026-11-13" value="2026-11-13"></div>
+</div></header>
+
+<h2 class="section">一、今日行动清单</h2><div class="compact" style="margin-top:0">GitHub 凭证过期致日报连续第 5 天未发布，本简报改用 trending 原始数据：astryx 连续两天第一，free-claude-code 与 codex-security 双双回榜，新入库“AI 问账”个人理财助手（opp-047）。</div><div class="task"><div class="box"></div><div>
+<div class="tt">用 meta/astryx 给自己一个旧项目页做 agent-ready 改造 demo，验证 AI agent 能否直接读结构并操作，录 1 分钟演示</div>
+<div class="meta">预计 约2小时 · 来自：Agent-ready 网站/设计系统改造（opp-044，astryx 连续两天第一）</div></div></div><div class="task"><div class="box"></div><div>
+<div class="tt">本地跑通 free-claude-code，重点测 61 个 provider 路由、自动降级与多 key 轮换，记下免费额度与省 token 数字</div>
+<div class="meta">预计 约2小时 · 来自：企业级多模型成本网关实施（opp-001，free-claude-code 回榜 +415）</div></div></div><div class="task"><div class="box"></div><div>
+<div class="tt">用 codex-security v0.10.0 给自己 1 个项目跑一遍扫描（断点续跑 + 批量预算上限），出 1 份审计报告样本</div>
+<div class="meta">预计 约2小时 · 来自：企业代码安全审计代跑（opp-025，openai/codex-security v0.10.0）</div></div></div><div class="task"><div class="box"></div><div>
+<div class="tt">照 sure 的思路，给一个家庭账本做现金流/支出问答 demo，录 1 分钟演示，评估能否打包成部署服务</div>
+<div class="meta">预计 约2小时 · 来自：“AI 问账”个人理财助手代搭建（opp-047，今日新入库）</div></div></div><div class="task"><div class="box"></div><div>
+<div class="tt">对照 addyosmani/agent-skills 结构，复用 GoogleChrome/modern-web-guidance-src 的规范清单，做 1 个企业定制 skill 样例</div>
+<div class="meta">预计 约2小时 · 来自：垂直领域 Skills 包定制（opp-013，官方 skills 内容库爆发）</div></div></div><h2 class="section">二、机会池状态</h2><div class="statrow">
+<div class="stat"><div class="num">47</div><div class="lbl">待启动</div></div>
+<div class="stat"><div class="num">0</div><div class="lbl">进行中</div></div>
+<div class="stat"><div class="num">0</div><div class="lbl">已完成</div></div></div><h2 class="section">三、新入库机会</h2><div class="newitem"><h3>“AI 问账”个人理财助手代搭建</h3><p>we-promise/sure 单日 +967、连续两天近千增量，个人理财 + AI 助手问答是明确需求，“问账”这个单点可直接抄成部署服务。</p></div><h2 class="section">四、本周目标</h2><div class="compact">本周目标：AI 客服代建演示（10 个高频问题 + 报价锚）、漏接回拨演示 + 50 条短信冷启动、安全审计样本、t3code 部署视频、computer use 录屏各出 1 个，周日复盘各线验单结果定下周主攻线；周五收尾：astryx 与 free-claude-code 两个 demo 至少出 1 个。GitHub 凭证过期已致日报连续 5 天未发布，需用户重连，不影响本周演示线。</div><footer>机会来源：GitHub 趋势日报、每周赚钱机会简报 · 执行状态每日更新</footer>
+</div><script>
+const ARCHIVE_DATES=["2026-11-13","2026-11-12","2026-11-11","2026-11-10","2026-11-09","2026-11-08","2026-11-07","2026-11-06","2026-11-05","2026-11-04","2026-11-03","2026-11-02","2026-11-01","2026-10-31","2026-10-30","2026-10-29","2026-10-28","2026-10-27","2026-10-26","2026-10-25","2026-10-24","2026-10-23","2026-10-22","2026-10-21","2026-10-20","2026-10-19","2026-10-18","2026-10-17","2026-10-16","2026-10-15","2026-10-14","2026-10-13"];const CURRENT_DATE="2026-11-13";
+document.getElementById("dp").addEventListener("change",function(){var v=this.value;if(ARCHIVE_DATES.indexOf(v)>=0){location.href=v+".html";}else{this.value=CURRENT_DATE;}});
+</script></body></html>
