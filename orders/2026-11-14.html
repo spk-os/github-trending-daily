@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>网站需求接单分析 · 2026-11-14</title><style>
+:root{--ink:#1a1a1a;--muted:#666;--line:#e8e8e8;--accent:#0969da;--bg:#fafbfc;--card:#fff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.75}
+.wrap{max-width:100%;margin:0 auto;padding:32px 44px 80px}
+header.hero{border-bottom:3px solid var(--ink);padding-bottom:20px;margin-bottom:32px}
+.hero-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+header.hero h1{margin:0 0 8px;font-size:30px}
+header.hero .meta{color:var(--muted);font-size:14px}
+.dateselect{display:flex;align-items:center;gap:10px;padding-top:6px}
+.dateselect label{font-size:14px;color:var(--muted);white-space:nowrap}
+.dateselect input[type="date"]{font-size:14px;padding:7px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);cursor:pointer}
+.sitenav{display:flex;gap:8px;margin-bottom:24px;flex-wrap:wrap}
+.sitenav a{font-size:14px;padding:6px 16px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--muted);background:#fff;white-space:nowrap}
+.sitenav a.active{color:var(--accent);border-color:var(--accent)}
+.sitenav a:hover{color:var(--accent)}
+h2.section{font-size:22px;margin:44px 0 20px;padding-left:12px;border-left:5px solid var(--accent)}
+.dtable{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:12px;font-size:14.5px;overflow:hidden}
+.dtable th,.dtable td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.dtable thead th{background:#f6f8fa;font-size:13px;color:var(--muted)}
+.dtable tbody tr:last-child td{border-bottom:none}
+.compact{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 24px;font-size:14.5px;color:#333;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 24px}
+.card h3{margin:0 0 8px;font-size:16.5px}
+.card h3 a{color:var(--accent);text-decoration:none}
+.card .row{font-size:14px;margin:6px 0;color:#333}
+.card .row b{color:#111}
+.card .tag{font-size:12px;background:#f1f4f9;border:1px solid var(--line);border-radius:6px;padding:1px 8px;margin-right:6px;color:#555;white-space:nowrap}
+.entry{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 26px;margin-bottom:14px}
+.entry h3{margin:0 0 8px;font-size:16.5px}
+.entry p{margin:6px 0;font-size:14.5px}
+footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+a{color:var(--accent)}
+@media(max-width:700px){.wrap{padding:20px 16px 60px}}
+</style></head><body><div class="wrap">
+<nav class="sitenav"><a href="../">日报中心</a><a href="../github/">GitHub 分析</a><a href="../orders/" class="active">接单分析</a><a href="../opportunities/">机会执行</a></nav>
+<header class="hero"><div class="hero-top"><div>
+<h1>网站需求接单分析报告</h1>
+<div class="meta">2026-11-14 · 网站类外包需求扫描、价格区间与接单切入点</div></div>
+<div class="dateselect"><label for="dp">选择日期</label><input type="date" id="dp" min="2026-10-13" max="2026-11-14" value="2026-11-14"></div>
+</div></header>
+
+<h2 class="section">一、今日需求速览</h2>
+<div class="compact">今日需求速览：客栈兼职池 1,274,101 人（+383），30 条月租样本 6,525–26,100 元、中位数 16,312.5 元（较昨日 +2,175.5 元，43,500 元高价样本消失但中枢上移）；猪八戒任务大厅与搜索页均被滑块验证拦截、今日未取到在架价；新入 4 份 11 月报价指南：Java 外包定制 8–30 万元、中高端定制官网 3–8 万元、找人做官网三年总账 5,000–7,000 元。</div><h2 class="section">二、需求分类与价格</h2>
+<table class="dtable"><thead><tr><th>类别</th><th>需求量</th><th>预算区间</th><th>主流技术栈</th><th>备注</th></tr></thead>
+<tbody><tr><td><b>企业品牌官网</b></td><td>客栈 30 条月租样本中位数 16,312.5 元（+2,175.5）</td><td>模板化 8,000–15,000 元，定制营销型 20,000–50,000 元，中高端定制 3–8 万元</td><td>WordPress / Next.js + CMS、响应式前端</td><td>IT之家新口径：中高端定制官网 3–8 万元、高端品牌定制 10 万元以上，与酷盾 8,000–50,000 元档互为印证。</td></tr><tr><td><b>Java / 业务系统定制</b></td><td>新口径 136ok 指南（11 天前更新）</td><td>演示级 3–8 万元，标准业务站 8–25 万元，高并发交易站 25–80 万元</td><td>Java 后端 + 前端、支付 / 权限 / 报表</td><td>费用拆分最细：需求原型 0.5–2 万、UI 0.8–3 万、前端 1.2–6 万、Java 后端 2–15 万、测试 0.8–3 万、云资源首年 0.5–5 万。</td></tr><tr><td><b>微信小程序</b></td><td>猪八戒今日未取到在架价（滑块验证拦截）</td><td>客栈常规电商小程序约 3 万元</td><td>Uni-app / Taro + 云开发、微信支付</td><td>沿用昨日锚点；猪八戒数据缺失，今日不更新该类在架价。</td></tr><tr><td><b>电商 / 商城系统</b></td><td>景德镇口径稳定</td><td>模板 0.3–1.5 万元，半定制 1.5–6 万元，纯定制 9.8–39.8 万元</td><td>Vue + Node.js / Java、支付与物流对接</td><td>hymzw 新口径：基础电商 3–10 万元、复杂业务系统 10–50 万元以上，与景德镇档位一致。</td></tr><tr><td><b>外贸独立站 + GEO</b></td><td>稳定</td><td>模板 3,000–8,000 元，基础定制 1.2–3 万元，B2B 商城 5 万元以上</td><td>WordPress / Shopify、多语言、Schema + llms.txt</td><td>口径与昨日一致；Shopify 月费 27 美元起（约 189 元），SaaS 订阅是持续成本不是一次性费用。</td></tr><tr><td><b>AI 智能体 / 知识库定制</b></td><td>今日无新口径，沿用昨日锚点</td><td>验证型 3–15 万元，业务级 15–60 万元，企业级 60–200 万元+；佛山基础自动化 15–30 万元、专业级 30–80 万元</td><td>Dify / RAGFlow、n8n、LangChain、私有化部署</td><td>thinkingai 口径：数据清洗与知识工程可占总成本 40%+；星光AI 佛山口径：私有化比 SaaS 贵 30%–50%，每增一个非标准接口 +2–5 万元。</td></tr></tbody></table><h2 class="section">三、值得跟进的需求</h2><div class="grid"><div class="card"><h3><a href="https://www.136ok.com/readnews/26306/">136ok：java软件开发网站制作 2026 指南，演示级 3–8 万元</a></h3>
+<div class="row"><span class="tag">演示级 3–8 万元，标准业务站 8–25 万元，高并发交易站 25–80 万元</span><span class="tag">136ok 2026 指南（11 天前更新）</span></div>
+<div class="row"><b>技术要求：</b>Java 全栈、需求原型 + UI + 前后端 + 测试拆分</div>
+<div class="row"><b>匹配度：</b>费用拆分最细的一份新口径，需求原型、UI、前后端、测试、云资源六项分价，报价单按此拆最清楚；Java 是用户可接的业务系统档。</div></div><div class="card"><h3><a href="https://www.ithome.com/1/019/110.htm">IT之家：高口碑官网建设服务商选型 2026，中高端定制 3–8 万元</a></h3>
+<div class="row"><span class="tag">中高端定制官网 3–8 万元，高端品牌定制 10 万元以上</span><span class="tag">IT之家（1 天前抓取）</span></div>
+<div class="row"><b>技术要求：</b>深度定制建站、源码交付</div>
+<div class="row"><b>匹配度：</b>中高端 3–8 万元与酷盾 8,000–50,000 元档互为印证，可用来守住定制官网报价下限；文中“行业定制平均结算价 78 万元”为媒体口径、未核实，未采用。</div></div><div class="card"><h3><a href="https://gkmix.com/website-cost/">gkmix：建站多少钱 2026，三年总账 5,000–7,000 元</a></h3>
+<div class="row"><span class="tag">自己搭 WordPress 三年 520–1,280 元，找人做官网三年 5,000–7,000 元，套模板 2,000–8,000 元</span><span class="tag">gkmix（价格核对 11 月 9–12 日）</span></div>
+<div class="row"><b>技术要求：</b>WordPress、建站平台</div>
+<div class="row"><b>匹配度：</b>唯一一份算三年总账的口径，可直接用来跟客户讲“首年价会低估”，把 5,000–7,000 元三年打包价当作找人做官网的成交锚。</div></div><div class="card"><h3><a href="http://www.seolp.cn/show-29155.html">seolp：网页设计报价 2026 真实价格，模板 500 元起</a></h3>
+<div class="row"><span class="tag">模板 500–3,000 元，半定制 3,000–12,000 元，定制 8,000–50,000 元</span><span class="tag">seolp 2026-11-02 发布</span></div>
+<div class="row"><b>技术要求：</b>网页设计、前端制作</div>
+<div class="row"><b>匹配度：</b>报价必须拆设计、前端、程序、域名主机、维护五项，留 30%–40% 尾款到验收后，是谈合同的现成话术。</div></div><div class="card"><h3><a href="https://www.proginn.com/cat">程序员客栈今日：兼职池 1,274,101 人，30 条月租 6,525–26,100 元</a></h3>
+<div class="row"><span class="tag">月租样本 6,525–26,100 元、中位数 16,312.5 元</span><span class="tag">程序员客栈 2026-11-14 实测</span></div>
+<div class="row"><b>技术要求：</b>企业官网 CMS、WordPress、网站群</div>
+<div class="row"><b>匹配度：</b>中位数较昨日 +2,175.5 元，43,500 元高价样本消失但中枢上移，月租运维单仍可按 6,500–16,000 元/月挂。</div></div></div><h2 class="section">四、价格参考</h2>
+<table class="dtable"><thead><tr><th>类型</th><th>低端</th><th>中端</th><th>高端</th></tr></thead>
+<tbody><tr><td><b>品牌官网</b></td><td>SaaS 自助 600–3,600 元/年，基础展示 3,000–8,000 元</td><td>模板化企业站 8,000–15,000 元（企业营销型 8,000–25,000 元）</td><td>定制营销型 20,000–50,000 元（中高端定制 3–8 万元）</td></tr><tr><td><b>电商 / 商城</b></td><td>模板 0.3–1.5 万元</td><td>半定制 1.5–6 万元（电商小程序约 3 万元）</td><td>纯定制 9.8–39.8 万元</td></tr><tr><td><b>外贸独立站</b></td><td>模板 3,000–8,000 元</td><td>基础定制 1.2–3 万元</td><td>B2B 商城 5 万元以上</td></tr><tr><td><b>AI 智能体</b></td><td>轻量平台 0–2 万元</td><td>验证型 3–15 万元</td><td>业务级 15–60 万元（企业级 100–300 万元+）</td></tr><tr><td><b>模板站</b></td><td>SaaS 自助 600–3,600 元/年</td><td>模板外包 3,000–15,000 元</td><td>WordPress 定制 0.5–1.5 万元</td></tr><tr><td><b>年维护 / 代运营</b></td><td>开发费 10%–20%/年</td><td>外包维护 800–5,000 元/月</td><td>智能体年服务费 15%–30%</td></tr></tbody></table><h2 class="section">五、接单切入点</h2><div class="entry"><h3>Java 业务站按六项拆分报价</h3><p>136ok 新口径把网站开发拆成需求原型 0.5–2 万元、UI 0.8–3 万元、前端 1.2–6 万元、Java 后端 2–15 万元、测试 0.8–3 万元、云资源首年 0.5–5 万元；演示级 3–8 万元、标准业务站 8–25 万元，客户问“为什么这么贵”时逐项对得上。</p><p><b>第一步：</b>按六项拆分做一张报价模板，Java 后端按功能点与接口数定 2–15 万元档。</p></div><div class="entry"><h3>找人做官网三年打包价 5,000–7,000 元</h3><p>gkmix 三年总账口径：自己搭 WordPress 三年 520–1,280 元，找人做 3–5 页官网三年连服务器与维护约 5,000–7,000 元；只看首年价会低估，续费与维护要一次讲清。</p><p><b>第一步：</b>把“三年 5,000–7,000 元含服务器与维护”做成一口价套餐，先发给下一个询价的官网客户。</p></div><div class="entry"><h3>报价单拆五项 + 留 30%–40% 尾款</h3><p>seolp 口径：报价必须拆设计费、前端制作费、程序开发费、域名主机费、维护费五项，只写“一口价”的要小心；验收前别付清尾款，留 30%–40% 到上线验收后。</p><p><b>第一步：</b>把现有报价单改成五项拆分版，合同写清尾款 30%–40% 验收后付。</p></div><div class="compact" style="margin-top:20px;color:var(--muted);font-size:13.5px">数据来源与局限说明：程序员客栈分类页 curl 实测（兼职池 1,274,101 人，+383；30 条月租样本 6,525–26,100 元，中位数 16,312.5 元）；猪八戒首页仅导航页、无在架价，任务大厅与搜索页均被滑块验证拦截，今日未取到猪八戒数据（昨日“15 条小程序服务价”亦无法从保存页面复核，今日起不再沿用）；报价口径来自 136ok、IT之家、seolp、gkmix、hymzw 11 月公开指南，非平台成交价，仅供接单定价参考。另：GitHub 发布凭证 401 故障未恢复，11-09 至 11-14 六期报告已生成但未能上线，归档日期含未上线日期，待凭证恢复后补推。</div><footer>数据来源：程序员客栈 / 猪八戒等平台公开需求、市场公开报价 · 仅供接单参考，不构成承诺</footer>
+</div><script>
+const ARCHIVE_DATES=["2026-11-14","2026-11-13","2026-11-12","2026-11-08","2026-11-07","2026-11-06","2026-11-05","2026-11-04","2026-11-03","2026-11-02","2026-11-01","2026-10-31","2026-10-30","2026-10-29","2026-10-28","2026-10-27","2026-10-26","2026-10-25","2026-10-24","2026-10-23","2026-10-21","2026-10-20","2026-10-19","2026-10-18","2026-10-17","2026-10-16","2026-10-15","2026-10-14","2026-10-13"];const CURRENT_DATE="2026-11-14";
+document.getElementById("dp").addEventListener("change",function(){var v=this.value;if(ARCHIVE_DATES.indexOf(v)>=0){location.href=v+".html";}else{this.value=CURRENT_DATE;}});
+</script></body></html>
